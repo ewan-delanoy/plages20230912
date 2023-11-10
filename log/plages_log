@@ -1436,3 +1436,249 @@ Database is already closed (to disable automatic closing at VM shutdown, add ";D
 2023-11-10 13:48:23.558  INFO 9936 --- [restartedMain] f.h.f.p.i.AjoutDonneesInitiales          : Ajout de 100 clients
 2023-11-10 13:48:30.736  INFO 9936 --- [restartedMain] f.h.f.p.i.AjoutDonneesInitiales          : nb de clients ajoutés:100
 2023-11-10 13:48:30.927  INFO 9936 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-11-10 14:43:38.098  WARN 9936 --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=6m16s442ms544µs800ns).
+2023-11-10 14:53:11.271  INFO 9936 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-10 14:53:11.271  INFO 9936 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-10 14:53:11.276  INFO 9936 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-11-10 14:53:11.292  INFO 9936 --- [http-nio-8080-exec-1] f.h.f.p.c.UtilisateurController          : Fri Nov 10 14:53:11 CET 2023 dans getConnexion()
+2023-11-10 14:53:22.216 ERROR 9936 --- [http-nio-8080-exec-4] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@278dcb5f]
+2023-11-10 14:53:22.216 ERROR 9936 --- [http-nio-8080-exec-8] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@73ff6758]
+2023-11-10 14:53:22.216 ERROR 9936 --- [http-nio-8080-exec-9] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@5854fe46]
+2023-11-10 14:53:22.216 ERROR 9936 --- [http-nio-8080-exec-5] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@49d43576]
+2023-11-10 14:53:22.216 ERROR 9936 --- [http-nio-8080-exec-7] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@405cb9aa]
+2023-11-10 14:53:22.216 ERROR 9936 --- [http-nio-8080-exec-6] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@3657bb5a]
+2023-11-10 14:53:22.359 ERROR 9936 --- [http-nio-8080-exec-8] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@7d654c1f]
+2023-11-10 14:53:22.360 ERROR 9936 --- [http-nio-8080-exec-1] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@3aa427e8]
+2023-11-10 14:53:22.362 ERROR 9936 --- [http-nio-8080-exec-10] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@72f7ce35]
+2023-11-10 14:53:22.362 ERROR 9936 --- [http-nio-8080-exec-6] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@3219e1ac]
+2023-11-10 15:55:22.501  WARN 9936 --- [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=25m13s683ms252µs600ns).
+2023-11-10 16:17:30.793  INFO 17976 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Starting PlagesApplication using Java 17.0.7 on HBPC-HWMBD15-004 with PID 17976 (C:\Users\HB\eclipse-workspace\plages20230912\target\classes started by HB in C:\Users\HB\eclipse-workspace\plages20230912)
+2023-11-10 16:17:30.795  INFO 17976 --- [restartedMain] f.h.fx.plages.PlagesApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-11-10 16:17:30.888  INFO 17976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-10 16:17:30.888  INFO 17976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-10 16:17:32.802  INFO 17976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-10 16:17:33.024  INFO 17976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 199 ms. Found 9 JPA repository interfaces.
+2023-11-10 16:17:35.010  INFO 17976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-10 16:17:35.040  INFO 17976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-10 16:17:35.041  INFO 17976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-11-10 16:17:35.708  INFO 17976 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-11-10 16:17:35.734  INFO 17976 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-10 16:17:35.734  INFO 17976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4844 ms
+2023-11-10 16:17:36.227  INFO 17976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-10 16:17:36.680  INFO 17976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-10 16:17:36.699  INFO 17976 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:plage'
+2023-11-10 16:17:37.188  INFO 17976 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-10 16:17:37.301  INFO 17976 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-11-10 16:17:37.648  INFO 17976 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-10 16:17:37.885  INFO 17976 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-10 16:17:39.591  INFO 17976 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-10 16:17:39.604  INFO 17976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-10 16:17:41.855  INFO 17976 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4194b30a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41931aa2, org.springframework.security.web.context.SecurityContextPersistenceFilter@5354d797, org.springframework.security.web.header.HeaderWriterFilter@c2ee8b3, org.springframework.security.web.authentication.logout.LogoutFilter@53587a1d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@114f5c58, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57a98381, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3bd58da, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52aa2ce1, org.springframework.security.web.session.SessionManagementFilter@107d4590, org.springframework.security.web.access.ExceptionTranslationFilter@6788c0f6, org.springframework.security.web.access.intercept.AuthorizationFilter@5cd336d7]
+2023-11-10 16:17:42.176  WARN 17976 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-10 16:17:43.158  INFO 17976 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-11-10 16:17:46.416  INFO 17976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-10 16:17:46.435  INFO 17976 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+2023-11-10 16:17:46.588  INFO 17976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-10 16:17:46.622  INFO 17976 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Started PlagesApplication in 16.539 seconds (JVM running for 17.596)
+2023-11-10 16:17:47.244  INFO 17976 --- [restartedMain] f.h.f.p.i.AjoutDonneesInitiales          : Ajout de 100 clients
+2023-11-10 16:17:54.365  INFO 17976 --- [restartedMain] f.h.f.p.i.AjoutDonneesInitiales          : nb de clients ajoutés:100
+2023-11-10 16:18:25.142  INFO 17976 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-10 16:18:25.143  INFO 17976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-10 16:18:25.148  INFO 17976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-11-10 16:18:25.205  INFO 17976 --- [http-nio-8080-exec-1] f.h.f.p.c.UtilisateurController          : Fri Nov 10 16:18:25 CET 2023 dans getConnexion()
+2023-11-10 16:18:33.671 ERROR 17976 --- [http-nio-8080-exec-4] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@489df6b]
+2023-11-10 16:18:33.672 ERROR 17976 --- [http-nio-8080-exec-8] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@49c2e08]
+2023-11-10 16:18:33.672 ERROR 17976 --- [http-nio-8080-exec-9] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@2524d680]
+2023-11-10 16:18:33.671 ERROR 17976 --- [http-nio-8080-exec-6] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@20284545]
+2023-11-10 16:18:33.672 ERROR 17976 --- [http-nio-8080-exec-7] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@5d14c177]
+2023-11-10 16:18:33.671 ERROR 17976 --- [http-nio-8080-exec-5] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@61d39f0b]
+2023-11-10 16:18:33.869 ERROR 17976 --- [http-nio-8080-exec-6] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@246619c4]
+2023-11-10 16:18:33.870 ERROR 17976 --- [http-nio-8080-exec-5] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@45aac74e]
+2023-11-10 16:18:33.874 ERROR 17976 --- [http-nio-8080-exec-4] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@505a3610]
+2023-11-10 16:18:33.880 ERROR 17976 --- [http-nio-8080-exec-9] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@71ec0dda]
+2023-11-10 16:18:45.129 ERROR 17976 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "fr.humanbooster.fx.plages.business.Client.getId()" because the return value of "fr.humanbooster.fx.plages.business.Reservation.getClient()" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "fr.humanbooster.fx.plages.business.Client.getId()" because the return value of "fr.humanbooster.fx.plages.business.Reservation.getClient()" is null
+	at fr.humanbooster.fx.plages.controller.ReservationController.postReservation(ReservationController.java:103) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.29.jar:5.3.29]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.29.jar:5.3.29]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.29.jar:5.3.29]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.29.jar:5.3.29]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.29.jar:5.3.29]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.29.jar:5.3.29]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.29.jar:5.3.29]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.29.jar:5.3.29]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555) ~[tomcat-embed-core-9.0.79.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.29.jar:5.3.29]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.79.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at fr.humanbooster.fx.plages.filter.CheckPointFilter.doFilter(CheckPointFilter.java:55) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:337) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:96) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:223) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:217) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186) ~[spring-security-web-5.7.10.jar:5.7.10]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.7.15.jar:2.7.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.29.jar:5.3.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.79.jar:9.0.79]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-11-10 16:18:45.132 ERROR 17976 --- [http-nio-8080-exec-2] org.apache.logging.log4j.Logger          : /erreur : erreur : 500SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@36b8db96]
+2023-11-10 16:20:22.359  INFO 17976 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-11-10 16:20:22.415  INFO 17976 --- [Thread-6] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-10 16:20:22.423  INFO 17976 --- [Thread-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-10 16:20:22.511  INFO 17976 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-10 16:20:22.784  WARN 17976 --- [Thread-6] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-11-10 16:20:22.788  INFO 17976 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-10 16:20:22.796  INFO 17976 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-10 16:20:23.180  INFO 17976 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Starting PlagesApplication using Java 17.0.7 on HBPC-HWMBD15-004 with PID 17976 (C:\Users\HB\eclipse-workspace\plages20230912\target\classes started by HB in C:\Users\HB\eclipse-workspace\plages20230912)
+2023-11-10 16:20:23.188  INFO 17976 --- [restartedMain] f.h.fx.plages.PlagesApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-11-10 16:20:25.070  INFO 17976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-10 16:20:25.368  INFO 17976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 297 ms. Found 9 JPA repository interfaces.
+2023-11-10 16:20:25.886  INFO 17976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-10 16:20:25.890  INFO 17976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-10 16:20:25.893  INFO 17976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-11-10 16:20:26.341  INFO 17976 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-11-10 16:20:26.346  INFO 17976 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-10 16:20:26.347  INFO 17976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3150 ms
+2023-11-10 16:20:26.402  INFO 17976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-11-10 16:20:26.406  INFO 17976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-11-10 16:20:26.407  INFO 17976 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:plage'
+2023-11-10 16:20:26.489  INFO 17976 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-10 16:20:26.502  INFO 17976 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-10 16:20:26.768  INFO 17976 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-10 16:20:26.769  INFO 17976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-10 16:20:27.395  INFO 17976 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@272aa775, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a200b48, org.springframework.security.web.context.SecurityContextPersistenceFilter@6edd9f4f, org.springframework.security.web.header.HeaderWriterFilter@1dd2a282, org.springframework.security.web.authentication.logout.LogoutFilter@7088c70a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1ffa47a7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4844eb2f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@408a9617, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43de0935, org.springframework.security.web.session.SessionManagementFilter@2460a73, org.springframework.security.web.access.ExceptionTranslationFilter@47cc2e7d, org.springframework.security.web.access.intercept.AuthorizationFilter@11ac92dd]
+2023-11-10 16:20:27.457  WARN 17976 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-10 16:20:27.721  INFO 17976 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-11-10 16:20:29.047  INFO 17976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-10 16:20:29.055  INFO 17976 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+2023-11-10 16:20:29.083  INFO 17976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-10 16:20:29.092  INFO 17976 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Started PlagesApplication in 6.037 seconds (JVM running for 180.066)
+2023-11-10 16:20:29.358  INFO 17976 --- [restartedMain] f.h.f.p.i.AjoutDonneesInitiales          : Ajout de 100 clients
+2023-11-10 16:20:36.974  INFO 17976 --- [restartedMain] f.h.f.p.i.AjoutDonneesInitiales          : nb de clients ajoutés:100
+2023-11-10 16:20:37.186  INFO 17976 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-11-10 16:21:45.063  INFO 17976 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-11-10 16:21:45.100  INFO 17976 --- [Thread-8] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-10 16:21:45.117  INFO 17976 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-10 16:21:45.394  WARN 17976 --- [Thread-8] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-11-10 16:21:45.408  INFO 17976 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-11-10 16:21:45.537  INFO 17976 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-11-10 16:21:45.843  INFO 17976 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Starting PlagesApplication using Java 17.0.7 on HBPC-HWMBD15-004 with PID 17976 (C:\Users\HB\eclipse-workspace\plages20230912\target\classes started by HB in C:\Users\HB\eclipse-workspace\plages20230912)
+2023-11-10 16:21:45.844  INFO 17976 --- [restartedMain] f.h.fx.plages.PlagesApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-11-10 16:21:47.836  INFO 17976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-10 16:21:48.191  INFO 17976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 354 ms. Found 9 JPA repository interfaces.
+2023-11-10 16:21:48.997  INFO 17976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-10 16:21:49.000  INFO 17976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-10 16:21:49.002  INFO 17976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-11-10 16:21:49.622  INFO 17976 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-11-10 16:21:49.630  INFO 17976 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-10 16:21:49.630  INFO 17976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3774 ms
+2023-11-10 16:21:49.714  INFO 17976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-11-10 16:21:49.720  INFO 17976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-11-10 16:21:49.721  INFO 17976 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:plage'
+2023-11-10 16:21:49.835  INFO 17976 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-10 16:21:49.850  INFO 17976 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-10 16:21:50.097  INFO 17976 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-10 16:21:50.098  INFO 17976 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-10 16:21:50.621  INFO 17976 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4187b14c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68cef3c, org.springframework.security.web.context.SecurityContextPersistenceFilter@70c13816, org.springframework.security.web.header.HeaderWriterFilter@79b879f0, org.springframework.security.web.authentication.logout.LogoutFilter@2a83e7d8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@311eca5a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3575de6c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@fb846cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1022fb6d, org.springframework.security.web.session.SessionManagementFilter@b3af4a9, org.springframework.security.web.access.ExceptionTranslationFilter@177a516b, org.springframework.security.web.access.intercept.AuthorizationFilter@748f3522]
+2023-11-10 16:21:50.666  WARN 17976 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-10 16:21:50.848  INFO 17976 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-11-10 16:21:52.110  INFO 17976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-10 16:21:52.120  INFO 17976 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+2023-11-10 16:21:52.162  INFO 17976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-10 16:21:52.181  INFO 17976 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Started PlagesApplication in 6.45 seconds (JVM running for 263.155)
+2023-11-10 16:21:52.414  INFO 17976 --- [restartedMain] f.h.f.p.i.AjoutDonneesInitiales          : Ajout de 100 clients
+2023-11-10 16:21:59.797  INFO 17976 --- [restartedMain] f.h.f.p.i.AjoutDonneesInitiales          : nb de clients ajoutés:100
+2023-11-10 16:21:59.992  INFO 17976 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-11-10 16:22:27.271  INFO 17976 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-10 16:22:27.271  INFO 17976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-10 16:22:27.273  INFO 17976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-10 16:22:27.287  INFO 17976 --- [http-nio-8080-exec-1] f.h.f.p.c.UtilisateurController          : Fri Nov 10 16:22:27 CET 2023 dans getConnexion()
+2023-11-10 16:22:44.518 ERROR 17976 --- [http-nio-8080-exec-5] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@7c7b2e9e]
+2023-11-10 16:22:44.525 ERROR 17976 --- [http-nio-8080-exec-10] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@10ab0f02]
+2023-11-10 16:22:44.533 ERROR 17976 --- [http-nio-8080-exec-7] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@3dfc3b33]
+2023-11-10 16:22:44.535 ERROR 17976 --- [http-nio-8080-exec-9] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@10f4acb0]
+2023-11-10 16:22:44.536 ERROR 17976 --- [http-nio-8080-exec-6] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@108080b6]
+2023-11-10 16:22:44.541 ERROR 17976 --- [http-nio-8080-exec-4] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@3e061e22]
+2023-11-10 16:22:44.686 ERROR 17976 --- [http-nio-8080-exec-1] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@66c16535]
+2023-11-10 16:22:44.695 ERROR 17976 --- [http-nio-8080-exec-5] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@109e10d9]
+2023-11-10 16:22:44.696 ERROR 17976 --- [http-nio-8080-exec-8] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@be8dd3f]
+2023-11-10 16:22:44.697 ERROR 17976 --- [http-nio-8080-exec-2] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@1baeae5c]

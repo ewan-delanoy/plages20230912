@@ -78,8 +78,6 @@ public class ReservationController {
 		}
 		else {
 			reservation = new Reservation();
-
-		}
 			if (idClient!=null) {
 				reservation.setClient(clientService.recupererClient(idClient));
 			}
@@ -90,6 +88,7 @@ public class ReservationController {
 				}
 				reservation.setParasols(parasols);
 			}
+		}
 		mav.addObject("reservation", reservation);
 		mav.addObject("clients", clientService.recupererClients());
 		mav.addObject("parasols", parasolService.recupererParasols());
@@ -101,7 +100,8 @@ public class ReservationController {
 		System.out.println("Entering ReservationController.postReservation");
 		if (result.hasErrors()) {
 			System.out.println(result);
-			ModelAndView mav = getReservation(reservation.getClient().getId(), reservation.getId(),  reservation.getParasols().size());
+			Long clientId = (reservation.getClient() != null)?reservation.getClient().getId():null;
+			ModelAndView mav = getReservation(clientId, reservation.getId(),  reservation.getParasols().size());
 			mav.addObject("reservation", reservation);
 			return mav;
 		}
