@@ -10,6 +10,9 @@ public class DateDebutEgaleOuAvantDateFinValidator implements ConstraintValidato
 
 	@Override
 	public boolean isValid(Reservation reservation, ConstraintValidatorContext context) {
+		if (reservation.getDateDebut()==null ||reservation.getDateFin()==null ) {
+			return false; 
+		}
 		return (reservation.getDateDebut().equals(reservation.getDateFin()) || reservation.getDateDebut().isBefore(reservation.getDateFin()));
 	}
 

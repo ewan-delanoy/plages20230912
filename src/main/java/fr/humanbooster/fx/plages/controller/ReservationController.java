@@ -78,6 +78,8 @@ public class ReservationController {
 		}
 		else {
 			reservation = new Reservation();
+
+		}
 			if (idClient!=null) {
 				reservation.setClient(clientService.recupererClient(idClient));
 			}
@@ -88,7 +90,6 @@ public class ReservationController {
 				}
 				reservation.setParasols(parasols);
 			}
-		}
 		mav.addObject("reservation", reservation);
 		mav.addObject("clients", clientService.recupererClients());
 		mav.addObject("parasols", parasolService.recupererParasols());
@@ -97,9 +98,10 @@ public class ReservationController {
 	
 	@PostMapping("reservation")
 	public ModelAndView postReservation(@Valid @ModelAttribute Reservation reservation, BindingResult result) {
+		System.out.println("Entering ReservationController.postReservation");
 		if (result.hasErrors()) {
 			System.out.println(result);
-			ModelAndView mav = getReservation(reservation.getId(), reservation.getClient().getId(), reservation.getParasols().size());
+			ModelAndView mav = getReservation(reservation.getClient().getId(), reservation.getId(),  reservation.getParasols().size());
 			mav.addObject("reservation", reservation);
 			return mav;
 		}
