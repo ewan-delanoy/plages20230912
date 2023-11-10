@@ -66,7 +66,7 @@ public class AjoutDonneesInitiales implements CommandLineRunner {
 		ajouterClientFixe();
 		ajouterConcessionnaire();
 		ajouterStatuts();
-		ajouterReservations(200);
+		ajouterReservations(1);
 		//afficherStatistiques();
 	}
 	
@@ -152,7 +152,7 @@ public class AjoutDonneesInitiales implements CommandLineRunner {
 
 			Client client = Client.builder().nom(faker.name().lastName())
 					.dateHeureInscription(dateHeureInscription)
-					.prenom(faker.name().lastName())
+					.prenom(faker.name().firstName())
 					.pays(pays.get(random.nextInt(pays.size())))
 					.email(faker.internet().emailAddress())
 					.motDePasse(passwordEncoder.encode("12345678"))
