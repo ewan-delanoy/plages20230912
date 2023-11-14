@@ -66,7 +66,7 @@ public class AjoutDonneesInitiales implements CommandLineRunner {
 		ajouterClientFixe();
 		ajouterConcessionnaire();
 		ajouterStatuts();
-		ajouterReservations(1);
+		ajouterReservations(5);
 		//afficherStatistiques();
 	}
 	
