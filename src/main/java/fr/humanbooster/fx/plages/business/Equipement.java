@@ -1,13 +1,19 @@
 package fr.humanbooster.fx.plages.business;
 
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Entity
 @NoArgsConstructor
@@ -19,6 +25,11 @@ public class Equipement {
 	
 	private byte nbDeLits;
 	private byte nbDeFauteuils;
+	
+	@OneToMany(mappedBy="equipement")
+	@ToString.Exclude
+	@JsonIgnore
+	private List<Parasol> parasolsequipes;
 	
 	public Equipement(byte nbDeLits, byte nbDeFauteuils) {
 		super();
