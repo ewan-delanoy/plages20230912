@@ -20,6 +20,7 @@ import com.github.javafaker.Faker;
 
 import fr.humanbooster.fx.plages.business.Client;
 import fr.humanbooster.fx.plages.business.Concessionnaire;
+import fr.humanbooster.fx.plages.business.Equipement;
 import fr.humanbooster.fx.plages.business.File;
 import fr.humanbooster.fx.plages.business.LienDeParente;
 import fr.humanbooster.fx.plages.business.Parasol;
@@ -28,6 +29,7 @@ import fr.humanbooster.fx.plages.business.Reservation;
 import fr.humanbooster.fx.plages.business.Statut;
 import fr.humanbooster.fx.plages.dao.ClientDao;
 import fr.humanbooster.fx.plages.dao.ConcessionnaireDao;
+import fr.humanbooster.fx.plages.dao.EquipementDao;
 import fr.humanbooster.fx.plages.dao.FileDao;
 import fr.humanbooster.fx.plages.dao.LienDeParenteDao;
 import fr.humanbooster.fx.plages.dao.ParasolDao;
@@ -42,6 +44,7 @@ import lombok.extern.log4j.Log4j2;
 @Log4j2
 public class AjoutDonneesInitiales implements CommandLineRunner {
 
+	private final EquipementDao equipementDao;
 	private final FileDao fileDao;
 	private final ParasolDao parasolDao;
 	private final PaysDao paysDao;	
@@ -58,6 +61,7 @@ public class AjoutDonneesInitiales implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
+		ajouterEquipements();
 		ajouterFiles();
 		ajouterParasols();
 		ajouterPays();
@@ -86,6 +90,18 @@ public class AjoutDonneesInitiales implements CommandLineRunner {
 				fileDao.save(new File(i, prixJournalier));
 				prixJournalier -= 2;
 			}
+		}
+	}
+
+	private void ajouterEquipements() {
+		// On teste si des equipements sont déjà en base
+		if (equipementDao.count()==0) {
+			// il n'y a pas encore d'équipements en base, on en ajoute 5
+			equipementDao.save(new Equipement((byte)1,(byte)0));
+			equipementDao.save(new Equipement((byte)2,(byte)0));
+			equipementDao.save(new Equipement((byte)0,(byte)1));
+			equipementDao.save(new Equipement((byte)1,(byte)1));
+			equipementDao.save(new Equipement((byte)0,(byte)2));
 		}
 	}
 
