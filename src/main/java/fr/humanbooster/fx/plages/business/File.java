@@ -1,3 +1,4 @@
+
 package fr.humanbooster.fx.plages.business;
 
 import java.util.List;

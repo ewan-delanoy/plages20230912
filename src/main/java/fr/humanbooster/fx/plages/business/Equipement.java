@@ -1,6 +1,5 @@
 package fr.humanbooster.fx.plages.business;
 
-
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -20,21 +19,21 @@ import lombok.ToString;
 @Data
 public class Equipement {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	private byte nbDeLits;
 	private byte nbDeFauteuils;
-	
-	@OneToMany(mappedBy="equipement")
+
+	@OneToMany(mappedBy = "equipement")
 	@ToString.Exclude
 	@JsonIgnore
-	private List<Parasol> parasolsequipes;
-	
+	private List<ParasolEquipe> parasolsequipes;
+
 	public Equipement(byte nbDeLits, byte nbDeFauteuils) {
 		super();
 		this.nbDeLits = nbDeLits;
 		this.nbDeFauteuils = nbDeFauteuils;
 	}
-	
+
 }
