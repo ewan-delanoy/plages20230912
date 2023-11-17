@@ -11,14 +11,19 @@ import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.SuperBuilder;
 
 @Entity
-@Data
+@AllArgsConstructor
+@Getter
+@Setter
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
 @SuperBuilder
@@ -42,11 +47,7 @@ public class Client extends Utilisateur {
 	private LocalDateTime dateHeureInscription = LocalDateTime.now();	
 	
 	public Client() {
-	}
-
-	public Client(LocalDateTime dateHeureInscription) {
-		super();
-		this.dateHeureInscription = dateHeureInscription;
+		this.dateHeureInscription = LocalDateTime.now();
 	}
 		
 }

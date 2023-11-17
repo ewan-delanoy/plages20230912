@@ -66,7 +66,7 @@ public class AjoutDonneesInitiales implements CommandLineRunner {
 		ajouterParasols();
 		ajouterPays();
 		ajouterLiensDeParente();
-		ajouterClients(100);
+		ajouterClients(10);
 		ajouterClientFixe();
 		ajouterConcessionnaire();
 		ajouterStatuts();

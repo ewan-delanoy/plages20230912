@@ -8,7 +8,6 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,12 +21,10 @@ public class ParasolEquipe {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
-	
-	private byte numEmplacement;
 
 	@ManyToOne
-	@NotNull(message="{parasol.file.manquante}")
-	private File file;
+	@NotNull(message="{parasolequipe.parasol.manquant}")
+	private Parasol parasol;
 	
 	@ManyToOne
 	@NotNull(message="{parasol.equipement.manquant}")
@@ -40,12 +37,13 @@ public class ParasolEquipe {
 	private List<Reservation> reservations;
     */
 
-	public ParasolEquipe(byte numEmplacement, File file) {
+	public ParasolEquipe(Parasol parasol, Equipement equipement) {
 		super();
-		this.numEmplacement = numEmplacement;
-		this.file = file;
+		this.parasol = parasol;
+		this.equipement = equipement;
 	}
 
+	/*
 	@JsonIgnore
 	public String getNumeroDeLaFile() {
 		return String.valueOf(file.getNumero());
@@ -54,4 +52,5 @@ public class ParasolEquipe {
 	public String getNumeroEmplacementEtNumeroDeFile() {
 		return numEmplacement + " en file " + file.getNumero();
 	}
+	*/
 }

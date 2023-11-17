@@ -39,4 +39,9 @@ public class File {
 		this.prixJournalier = prixJournalier;
 	}
 
+	public String getDescription() {
+		return "F" + this.numero;
+	}
+	
+	
 }

@@ -3,6 +3,7 @@ package fr.humanbooster.fx.plages.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 import org.springframework.data.domain.Pageable;
@@ -17,9 +18,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
+import fr.humanbooster.fx.plages.business.Brouillon;
 import fr.humanbooster.fx.plages.business.Parasol;
 import fr.humanbooster.fx.plages.business.Reservation;
 import fr.humanbooster.fx.plages.service.ClientService;
+import fr.humanbooster.fx.plages.service.EquipementService;
+import fr.humanbooster.fx.plages.service.FileService;
 import fr.humanbooster.fx.plages.service.ParasolService;
 import fr.humanbooster.fx.plages.service.ReservationService;
 import fr.humanbooster.fx.plages.view.ReservationExportPdf;
@@ -34,6 +38,8 @@ public class ReservationController {
 	private final ReservationService reservationService;
 	private final ParasolService parasolService;
 	private final ClientService clientService;
+	private final FileService fileService;
+	private final EquipementService equipementService;
 	
 	@GetMapping({"reservations"})
 	public ModelAndView getReservations(@PageableDefault(size=10, sort="dateDebut", direction = Direction.DESC) Pageable pageable) {
@@ -111,8 +117,23 @@ public class ReservationController {
 	
 	@GetMapping(value = {"brouillon"})
 	public ModelAndView getBrouillon() {
+		
 		ModelAndView mav = new ModelAndView("brouillon");
+		 System.out.println("PASSSE ICI");
+		/** ModelAndView mav = new ModelAndView("equipement", new Equipement());*/
+		mav.addObject("equipements", equipementService.recupererEquipements());
+		mav.addObject("parasols", parasolService.recupererParasols());
+		mav.addObject("brouillon");	
 		return mav;
 	}
-			
+	
+//	@PostMapping("brouillon")
+//	public ModelAndView postBrouillon(@ModelAttribute Brouillon brouillon, BindingResult result) {
+//		System.out.println("Entering ReservationController.postBrouillon");
+//		/* String[] emplacements = request.getParameterValues("emplacements");
+//		System.out.println(emplacements); */
+//		return new ModelAndView("brouillon");
+//	}
+	
+	
 }
