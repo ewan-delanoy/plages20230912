@@ -36,4 +36,10 @@ public class Equipement {
 		this.nbDeFauteuils = nbDeFauteuils;
 	}
 
+	public String getDescription() {
+		String lit = this.nbDeLits==0?"":(this.nbDeLits)+" lits";
+		String virgule = ( this.nbDeLits!=0 && this.nbDeFauteuils!=0)?"":",";
+		String fauteuil = this.nbDeFauteuils==0?"":(this.nbDeFauteuils)+" fauteuils";
+		return lit + virgule  + fauteuil;
+	}
 }

@@ -108,4 +108,11 @@ public class ReservationController {
 		reservationService.enregistrerReservation(reservation);
 		return new ModelAndView("redirect:/reservations");
 	}
+	
+	@GetMapping(value = {"brouillon"})
+	public ModelAndView getBrouillon() {
+		ModelAndView mav = new ModelAndView("brouillon");
+		return mav;
+	}
+			
 }
