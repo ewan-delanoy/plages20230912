@@ -38,7 +38,7 @@ public class ClientServiceImpl implements ClientService {
 
 	@Override
 	public Client recupererClient(Long idClient) {
-		return clientDao.findById(idClient).orElse(null);
+		return clientDao.findByIdUtilisateur(idClient)/* .orElse(null) */;
 	}
 
 	@Override
@@ -55,7 +55,7 @@ public class ClientServiceImpl implements ClientService {
 			.email(clientDto.getEmail())
 			.motDePasse(passwordEncoder.encode(clientDto.getMotDePasse()))
 			.pays(paysService.recupererPays(clientDto.getPaysDto().getCode()))
-			.lienDeParente(lienDeParenteService.recupererLienDeParente(clientDto.getLienDeParenteDto().getId()))
+			.lienDeParente(lienDeParenteService.recupererLienDeParente(clientDto.getLienDeParenteDto().getIdLienDeParente()))
 			.build();
 		clientMapper.toEntity(clientDto);
 		return clientDao.save(client);

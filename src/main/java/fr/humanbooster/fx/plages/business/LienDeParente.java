@@ -20,7 +20,7 @@ public class LienDeParente {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long id;
+	private Long idLienDeParente;
 	
 	private String nom;
 

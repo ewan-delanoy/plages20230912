@@ -12,7 +12,7 @@ import lombok.experimental.FieldDefaults;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class LienDeParenteDto {
 
-	Long id;
+	Long idLienDeParente;
 	String nom;
 	Float coefficient;
 }

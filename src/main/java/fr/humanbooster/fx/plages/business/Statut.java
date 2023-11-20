@@ -18,7 +18,7 @@ public class Statut {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long id;
+	private Long idStatut;
 
 	@NonNull
 	private String nom;

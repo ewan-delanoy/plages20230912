@@ -24,7 +24,7 @@ public class ReservationExportPdf extends AbstractPdfView {
 		BaseFont bf = BaseFont.createFont(BaseFont.HELVETICA, BaseFont.CP1252, BaseFont.NOT_EMBEDDED);
     	Reservation reservation = (Reservation) model.get("reservation");
 
-    	afficherText("Récapitulatif de la réservation " + reservation.getId(), 200, 760, bf, 16, cb);
+    	afficherText("Récapitulatif de la réservation " + reservation.getIdReservation(), 200, 760, bf, 16, cb);
     	
     	afficherText("Nom du client : " + reservation.getClient().getNom(), 40, 660, bf, 12, cb);
     	afficherText("Date de début : " + reservation.getDateDebut(), 40, 640, bf, 12, cb);

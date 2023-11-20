@@ -11,6 +11,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import fr.humanbooster.fx.plages.business.Client;
 import fr.humanbooster.fx.plages.business.LienDeParente;
 import fr.humanbooster.fx.plages.business.Pays;
+import fr.humanbooster.fx.plages.business.Utilisateur;
 import fr.humanbooster.fx.plages.util.NbInscrits;
 
 @RepositoryRestResource
@@ -118,5 +119,7 @@ public interface ClientDao extends JpaRepository<Client, Long> {
 	long deleteByPaysCode(String codePays);
 
 	boolean existsByEmail(String string);
+	
+	Client findByIdUtilisateur(Long username);
 
 }

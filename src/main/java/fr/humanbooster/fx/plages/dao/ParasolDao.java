@@ -24,4 +24,7 @@ public interface ParasolDao extends JpaRepository<Parasol, Long> {
 	// Query method : requête par dérivation
 	List<Parasol> findByNumEmplacementLessThan(byte i);
 	
+	// Query method : requête par dérivation
+	Parasol findByIdParasol(Long idParasol);
+	
 }
