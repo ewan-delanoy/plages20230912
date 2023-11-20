@@ -26,7 +26,7 @@ public class ParasolServiceImpl implements ParasolService {
 	@Override
 	public Page<Parasol> recupererParasols(Pageable pageable, Long idFile) {
 		// On invoque une méthode findByFileId qui est déclarée dans l'interface ParasolDao
-		return parasolDao.findByFileId(pageable, idFile);
+		return parasolDao.findByFileIdFile(pageable, idFile);
 	}
 
 	@Override

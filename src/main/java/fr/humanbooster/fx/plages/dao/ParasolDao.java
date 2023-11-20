@@ -19,7 +19,7 @@ public interface ParasolDao extends JpaRepository<Parasol, Long> {
 	List<Parasol> findByFile(File file);
 
 	// Query method : requête par dérivation
-	Page<Parasol> findByFileId(Pageable pageable, Long idFile);
+	Page<Parasol> findByFileIdFile(Pageable pageable, Long idFile);
 
 	// Query method : requête par dérivation
 	List<Parasol> findByNumEmplacementLessThan(byte i);

@@ -22,7 +22,7 @@ public class File {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long id;
+	private Long idFile;
 	
 	private byte numero;
 	
