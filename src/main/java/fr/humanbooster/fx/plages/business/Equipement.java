@@ -20,7 +20,7 @@ import lombok.ToString;
 public class Equipement {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Long idEquipement;
 
 	private byte nbDeLits;
 	private byte nbDeFauteuils;

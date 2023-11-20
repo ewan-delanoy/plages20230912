@@ -86,7 +86,7 @@ public class ParasolController {
 		if (result.hasErrors()) {
 			// Il y a eu des erreurs au moment de la validation
 			// on redirige le concessionnaire vers l'URL parasol
-			return getParasol(parasol, parasol.getId());
+			return getParasol(parasol, parasol.getIdParasol());
 		}
 		parasolService.enregistrerParasol(parasol);
 		return new ModelAndView("redirect:parasols");

@@ -59,7 +59,7 @@ public class Reservation {
 	private String remarques;
 	
 	// Une réservation a un statut
-	// Cette annotation va créer une foreign key
+	// Cette annotation va créer une clé étrangère
 	// dans la table reservation
 	@ManyToOne
 	private Statut statut;
