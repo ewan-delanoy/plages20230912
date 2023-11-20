@@ -10,7 +10,7 @@ import lombok.experimental.FieldDefaults;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class ClientDto {
 
-	Long id;
+	Long idUtilisateur;
 
 	String nom;
 	

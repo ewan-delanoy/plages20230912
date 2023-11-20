@@ -107,7 +107,7 @@ public class ReservationController {
 		if (result.hasErrors()) {
 			System.out.println(result);
 			Long clientId = (reservation.getClient() != null)?reservation.getClient().getIdUtilisateur():null;
-			ModelAndView mav = getReservation(clientId, reservation.getId(),  reservation.getParasols().size());
+			ModelAndView mav = getReservation(clientId, reservation.getIdReservation(),  reservation.getParasols().size());
 			mav.addObject("reservation", reservation);
 			return mav;
 		}

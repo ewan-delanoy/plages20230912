@@ -35,7 +35,7 @@ public class Reservation {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long id;
+	private Long idReservation;
 	
 	@ManyToMany
 	@Size(min=1, message="La réservation doit inclure au minimum {min} parasol")
