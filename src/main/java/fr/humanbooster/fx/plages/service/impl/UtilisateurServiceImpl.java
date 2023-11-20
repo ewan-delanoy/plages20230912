@@ -33,7 +33,7 @@ public class UtilisateurServiceImpl implements UtilisateurService, UserDetailsSe
 
 	@Override
 	public Utilisateur recupererUtilisateur(Long idUtilisateur) {
-		return utilisateurDao.findById(idUtilisateur).orElse(null);
+		return utilisateurDao.findByIdUtilisateur(idUtilisateur).orElse(null);
 	}
 
 	@Override

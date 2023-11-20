@@ -30,13 +30,13 @@ public class SecurityConfiguration {
 			.authorizeHttpRequests(requests -> 
 				requests.antMatchers("/swagger-ui/index.html").permitAll()
 						.antMatchers("/index").permitAll()
+						.antMatchers("/brouillon").permitAll()
 						.antMatchers("/api-autogeneree/files").permitAll()
 						.antMatchers("/api-autogeneree/payses").permitAll()
 						.antMatchers("/parasols").authenticated()
 						.antMatchers(HttpMethod.GET, "/clients").hasRole("ADMIN")
 						.antMatchers(HttpMethod.POST, "/reservation").hasRole("ADMIN")
 						.antMatchers(HttpMethod.GET, "/reservations").hasAnyRole("USER", "ADMIN")
-						.antMatchers(HttpMethod.GET, "/brouillon").hasRole("ADMIN")
 					    )
 				.headers(header -> header.frameOptions().disable());
 		

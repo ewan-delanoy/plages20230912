@@ -76,8 +76,8 @@ public class AjoutDonneesInitiales implements CommandLineRunner {
 	
 	private void ajouterStatuts() {
 		if (statutDao.count()==0) {
-			statutDao.saveAll(Arrays.asList(new Statut("en attente de traitement"),
-					new Statut("acceptée"), new Statut("refusée")));			
+			statutDao.saveAll(Arrays.asList(new Statut("En attente de traitement"),
+					new Statut("Acceptée"), new Statut("Refusée")));			
 		}
     }
 	
@@ -126,14 +126,14 @@ public class AjoutDonneesInitiales implements CommandLineRunner {
 		if (lienDeParenteDao.count()==0) {
 			lienDeParenteDao.save(new LienDeParente("Frère/Soeur", 0.5f));
 			lienDeParenteDao.save(new LienDeParente("Cousin/Cousine", 0.75f));
-			lienDeParenteDao.save(new LienDeParente("Aucun", 1f));
+			lienDeParenteDao.save(new LienDeParente("Aucun lien", 1f));
 		}
 	}
 
 	public void ajouterClientFixe() {
 		if (!clientDao.existsByEmail("plagiste@humanbooster.fr")) {
 			List<Pays> pays = paysDao.findAll();
-			LienDeParente lienDeParenteAucun = lienDeParenteDao.findByNom("Aucun");
+			LienDeParente lienDeParenteAucun = lienDeParenteDao.findByNom("Aucun lien");
 			Client client = Client.builder().nom(faker.name().lastName())
 				.prenom(faker.name().lastName())
 				.pays(pays.get(random.nextInt(pays.size())))
@@ -148,7 +148,7 @@ public class AjoutDonneesInitiales implements CommandLineRunner {
 	public void ajouterClientsSansCondition(int nbClientsAAjouter) {
 		// Partie déclarative
 		List<Pays> pays = paysDao.findAll();
-		LienDeParente lienDeParenteAucun = lienDeParenteDao.findByNom("Aucun");
+		LienDeParente lienDeParenteAucun = lienDeParenteDao.findByNom("Aucun lien");
 		Map<String, Client> map = new HashMap<>();
 		int compteur = 0;
 		Calendar calendar = Calendar.getInstance();

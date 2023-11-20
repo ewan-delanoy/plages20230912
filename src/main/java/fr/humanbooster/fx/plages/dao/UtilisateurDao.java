@@ -11,4 +11,6 @@ public interface UtilisateurDao extends JpaRepository<Utilisateur, Long> {
 	Utilisateur findLastByEmailAndMotDePasse(String email, String motDePasse);
 
 	Utilisateur findByEmail(String username);
+	
+	Utilisateur findByIdUtilisateur(String username);
 }
