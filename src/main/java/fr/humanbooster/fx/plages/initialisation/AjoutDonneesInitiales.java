@@ -108,9 +108,11 @@ public class AjoutDonneesInitiales implements CommandLineRunner {
 	private void ajouterParasols() {
 		if (parasolDao.count()==0) {
 			List<File> files = fileDao.findAll();
+			Equipement equipement=equipementDao.findByNbDeLitsAndNbDeFauteuils((byte)1,(byte)1);
 			for (File file : files) {
 				for (byte i = 1; i <=8; i++) {
-					parasolDao.save(new Parasol(i, file));					
+					
+					parasolDao.save(new Parasol(i, file,equipement));					
 				}
 			}
 		}	
@@ -146,7 +148,6 @@ public class AjoutDonneesInitiales implements CommandLineRunner {
 	public void ajouterClientsSansCondition(int nbClientsAAjouter) {
 		// Partie déclarative
 		List<Pays> pays = paysDao.findAll();
-		LienDeParente lienDeParenteAucun = lienDeParenteDao.findByNom("Aucun lien");
 		Map<String, Client> map = new HashMap<>();
 		int compteur = 0;
 		Calendar calendar = Calendar.getInstance();

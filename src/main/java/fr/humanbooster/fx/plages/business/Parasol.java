@@ -36,10 +36,16 @@ public class Parasol {
 	@JsonIgnore
 	private List<Reservation> reservations;
 
-	public Parasol(byte numEmplacement, File file) {
+	@ManyToOne
+	@NotNull(message="Merci de choisir un type d'équipement")
+	private Equipement equipement;
+	
+	
+	public Parasol(byte numEmplacement, File file,Equipement equipement) {
 		super();
 		this.numEmplacement = numEmplacement;
 		this.file = file;
+		this.equipement = equipement;
 	}
 
 	@JsonIgnore

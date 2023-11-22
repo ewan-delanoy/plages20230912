@@ -8637,3 +8637,513 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
 2023-11-22 15:11:09.131 ERROR 12576 --- [http-nio-8080-exec-2] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@70ae73ed]
 2023-11-22 15:11:14.928 ERROR 12576 --- [http-nio-8080-exec-3] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@2f335e04]
 2023-11-22 15:11:14.929 ERROR 12576 --- [http-nio-8080-exec-5] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@7b140534]
+2023-11-22 15:18:29.334  INFO 12576 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-11-22 15:18:29.406  INFO 12576 --- [Thread-6] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-22 15:18:29.415  INFO 12576 --- [Thread-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-22 15:18:29.519  INFO 12576 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:18:29.759  WARN 12576 --- [Thread-6] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-11-22 15:18:29.760  INFO 12576 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-22 15:18:29.767  INFO 12576 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-22 15:18:30.128  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Starting PlagesApplication using Java 17.0.7 on HBPC-HWMBD15-004 with PID 12576 (C:\Users\HB\eclipse-workspace\plages20230912\target\classes started by HB in C:\Users\HB\eclipse-workspace\plages20230912)
+2023-11-22 15:18:30.128  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-11-22 15:18:32.967  INFO 12576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-22 15:18:33.191  INFO 12576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 222 ms. Found 10 JPA repository interfaces.
+2023-11-22 15:18:33.583  INFO 12576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-22 15:18:33.584  INFO 12576 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-22 15:18:33.585  INFO 12576 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-11-22 15:18:34.059  INFO 12576 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-11-22 15:18:34.072  INFO 12576 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-22 15:18:34.072  INFO 12576 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3927 ms
+2023-11-22 15:18:34.164  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-11-22 15:18:34.174  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-11-22 15:18:34.175  INFO 12576 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:plage'
+2023-11-22 15:18:34.296  INFO 12576 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-22 15:18:34.315  INFO 12576 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-22 15:18:34.684  INFO 12576 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-22 15:18:34.685  INFO 12576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:18:35.466  INFO 12576 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@16031d0c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b54b0e1, org.springframework.security.web.context.SecurityContextPersistenceFilter@3445b328, org.springframework.security.web.header.HeaderWriterFilter@1ae1e90, org.springframework.security.web.authentication.logout.LogoutFilter@9ed0a7a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7313d538, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51157225, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20beac09, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a20e365, org.springframework.security.web.session.SessionManagementFilter@65aaa193, org.springframework.security.web.access.ExceptionTranslationFilter@53e6da67, org.springframework.security.web.access.intercept.AuthorizationFilter@77dc7757]
+2023-11-22 15:18:35.527  WARN 12576 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-22 15:18:35.728  INFO 12576 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-11-22 15:18:37.190  INFO 12576 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-22 15:18:37.205  INFO 12576 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+2023-11-22 15:18:37.316  INFO 12576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-22 15:18:37.367  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Started PlagesApplication in 7.465 seconds (JVM running for 559.68)
+2023-11-22 15:18:37.502  INFO 12576 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-22 15:18:37.568 ERROR 12576 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.15.jar:2.7.15]
+	at fr.humanbooster.fx.plages.PlagesApplication.main(PlagesApplication.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.15.jar:2.7.15]
+Caused by: javax.validation.ConstraintViolationException: Validation failed for classes [fr.humanbooster.fx.plages.business.Parasol] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Merci de choisir un type d'équipement', propertyPath=equipement, rootBeanClass=class fr.humanbooster.fx.plages.business.Parasol, messageTemplate='Merci de choisir un type d'équipement'}
+]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:140) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:80) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.preInsert(EntityIdentityInsertAction.java:188) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:78) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:329) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:286) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:192) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:122) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:756) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:742) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at jdk.internal.reflect.GeneratedMethodAccessor82.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:315) ~[spring-orm-5.3.29.jar:5.3.29]
+	at jdk.proxy5/jdk.proxy5.$Proxy222.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:666) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at jdk.internal.reflect.GeneratedMethodAccessor81.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:530) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:286) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:640) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:76) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.29.jar:5.3.29]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.29.jar:5.3.29]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.29.jar:5.3.29]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.29.jar:5.3.29]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:241) ~[spring-aop-5.3.29.jar:5.3.29]
+	at jdk.proxy5/jdk.proxy5.$Proxy227.save(Unknown Source) ~[na:na]
+	at fr.humanbooster.fx.plages.initialisation.AjoutDonneesInitiales.ajouterParasols(AjoutDonneesInitiales.java:113) ~[classes/:na]
+	at fr.humanbooster.fx.plages.initialisation.AjoutDonneesInitiales.run(AjoutDonneesInitiales.java:66) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768) ~[spring-boot-2.7.15.jar:2.7.15]
+	... 10 common frames omitted
+
+2023-11-22 15:18:37.610  INFO 12576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:18:37.824  WARN 12576 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-11-22 15:18:37.825  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-11-22 15:18:37.827  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-11-22 15:20:26.458  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Starting PlagesApplication using Java 17.0.7 on HBPC-HWMBD15-004 with PID 12576 (C:\Users\HB\eclipse-workspace\plages20230912\target\classes started by HB in C:\Users\HB\eclipse-workspace\plages20230912)
+2023-11-22 15:20:26.459  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-11-22 15:20:28.513  INFO 12576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-22 15:20:28.684  INFO 12576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 169 ms. Found 10 JPA repository interfaces.
+2023-11-22 15:20:29.049  INFO 12576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-22 15:20:29.051  INFO 12576 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-22 15:20:29.051  INFO 12576 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-11-22 15:20:29.422  INFO 12576 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-11-22 15:20:29.430  INFO 12576 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-22 15:20:29.431  INFO 12576 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2956 ms
+2023-11-22 15:20:29.509  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-11-22 15:20:29.514  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-11-22 15:20:29.515  INFO 12576 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:plage'
+2023-11-22 15:20:29.684  INFO 12576 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-22 15:20:29.725  INFO 12576 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-22 15:20:30.036  INFO 12576 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-22 15:20:30.037  INFO 12576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:20:30.739  INFO 12576 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@21e79e82, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@711b2ae4, org.springframework.security.web.context.SecurityContextPersistenceFilter@7fea3782, org.springframework.security.web.header.HeaderWriterFilter@7de067ca, org.springframework.security.web.authentication.logout.LogoutFilter@35d6a78a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@54aacc6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@24e299d7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ac264b6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@196f4f2d, org.springframework.security.web.session.SessionManagementFilter@65548f23, org.springframework.security.web.access.ExceptionTranslationFilter@76c5a2da, org.springframework.security.web.access.intercept.AuthorizationFilter@218d97ce]
+2023-11-22 15:20:30.812  WARN 12576 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-22 15:20:31.033  INFO 12576 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-11-22 15:20:32.484  INFO 12576 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-22 15:20:32.491  INFO 12576 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+2023-11-22 15:20:32.517  INFO 12576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-22 15:20:32.528  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Started PlagesApplication in 6.149 seconds (JVM running for 674.84)
+2023-11-22 15:20:32.601  INFO 12576 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-22 15:20:32.616 ERROR 12576 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.15.jar:2.7.15]
+	at fr.humanbooster.fx.plages.PlagesApplication.main(PlagesApplication.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.15.jar:2.7.15]
+Caused by: javax.validation.ConstraintViolationException: Validation failed for classes [fr.humanbooster.fx.plages.business.Parasol] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Merci de choisir un type d'équipement', propertyPath=equipement, rootBeanClass=class fr.humanbooster.fx.plages.business.Parasol, messageTemplate='Merci de choisir un type d'équipement'}
+]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:140) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:80) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.preInsert(EntityIdentityInsertAction.java:188) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:78) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:329) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:286) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:192) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:122) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:756) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:742) ~[hibernate-core-5.6.15.Final.jar:5.6.15.Final]
+	at jdk.internal.reflect.GeneratedMethodAccessor82.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:315) ~[spring-orm-5.3.29.jar:5.3.29]
+	at jdk.proxy6/jdk.proxy6.$Proxy239.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:666) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at jdk.internal.reflect.GeneratedMethodAccessor81.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:530) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:286) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:640) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:76) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.29.jar:5.3.29]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.29.jar:5.3.29]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.29.jar:5.3.29]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.29.jar:5.3.29]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:241) ~[spring-aop-5.3.29.jar:5.3.29]
+	at jdk.proxy6/jdk.proxy6.$Proxy244.save(Unknown Source) ~[na:na]
+	at fr.humanbooster.fx.plages.initialisation.AjoutDonneesInitiales.ajouterParasols(AjoutDonneesInitiales.java:113) ~[classes/:na]
+	at fr.humanbooster.fx.plages.initialisation.AjoutDonneesInitiales.run(AjoutDonneesInitiales.java:66) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768) ~[spring-boot-2.7.15.jar:2.7.15]
+	... 10 common frames omitted
+
+2023-11-22 15:20:32.652  INFO 12576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:20:32.860  WARN 12576 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-11-22 15:20:32.862  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-11-22 15:20:32.863  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-11-22 15:22:39.575  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Starting PlagesApplication using Java 17.0.7 on HBPC-HWMBD15-004 with PID 12576 (C:\Users\HB\eclipse-workspace\plages20230912\target\classes started by HB in C:\Users\HB\eclipse-workspace\plages20230912)
+2023-11-22 15:22:39.577  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-11-22 15:22:40.651  INFO 12576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-22 15:22:40.778  INFO 12576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 10 JPA repository interfaces.
+2023-11-22 15:22:41.051  INFO 12576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-22 15:22:41.052  INFO 12576 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-22 15:22:41.053  INFO 12576 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-11-22 15:22:41.329  INFO 12576 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-11-22 15:22:41.334  INFO 12576 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-22 15:22:41.334  INFO 12576 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1741 ms
+2023-11-22 15:22:41.380  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2023-11-22 15:22:41.383  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2023-11-22 15:22:41.384  INFO 12576 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:plage'
+2023-11-22 15:22:41.508  INFO 12576 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-22 15:22:41.544  INFO 12576 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-22 15:22:41.850  INFO 12576 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-22 15:22:41.851  INFO 12576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:22:42.443  INFO 12576 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@935bb26, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f92ab07, org.springframework.security.web.context.SecurityContextPersistenceFilter@5b9e78c1, org.springframework.security.web.header.HeaderWriterFilter@7b765b1c, org.springframework.security.web.authentication.logout.LogoutFilter@51681686, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3b51a817, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ad2fcb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a4a2a19, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ddca714, org.springframework.security.web.session.SessionManagementFilter@75b8db37, org.springframework.security.web.access.ExceptionTranslationFilter@76d5c7ce, org.springframework.security.web.access.intercept.AuthorizationFilter@18784289]
+2023-11-22 15:22:42.490  WARN 12576 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-22 15:22:42.676  INFO 12576 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-11-22 15:22:43.980  INFO 12576 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-22 15:22:43.988  INFO 12576 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+2023-11-22 15:22:44.022  INFO 12576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-22 15:22:44.052  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Started PlagesApplication in 4.897 seconds (JVM running for 806.364)
+2023-11-22 15:22:44.126  INFO 12576 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-22 15:22:44.137 ERROR 12576 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.Error: Unresolved compilation problems: 
+	The method save(S) in the type CrudRepository<Parasol,Long> is not applicable for the arguments (Parasol)
+	The constructor Parasol(byte, File) is undefined
+
+	at fr.humanbooster.fx.plages.initialisation.AjoutDonneesInitiales.ajouterParasols(AjoutDonneesInitiales.java:113) ~[classes/:na]
+	at fr.humanbooster.fx.plages.initialisation.AjoutDonneesInitiales.run(AjoutDonneesInitiales.java:66) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.15.jar:2.7.15]
+	at fr.humanbooster.fx.plages.PlagesApplication.main(PlagesApplication.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.15.jar:2.7.15]
+
+2023-11-22 15:22:44.168  INFO 12576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:22:44.382  WARN 12576 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-11-22 15:22:44.383  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-11-22 15:22:44.383  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2023-11-22 15:22:55.845  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Starting PlagesApplication using Java 17.0.7 on HBPC-HWMBD15-004 with PID 12576 (C:\Users\HB\eclipse-workspace\plages20230912\target\classes started by HB in C:\Users\HB\eclipse-workspace\plages20230912)
+2023-11-22 15:22:55.846  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-11-22 15:22:57.002  INFO 12576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-22 15:22:57.094  INFO 12576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 10 JPA repository interfaces.
+2023-11-22 15:22:57.260  INFO 12576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-22 15:22:57.261  INFO 12576 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-22 15:22:57.261  INFO 12576 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-11-22 15:22:57.487  INFO 12576 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-11-22 15:22:57.495  INFO 12576 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-22 15:22:57.495  INFO 12576 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1643 ms
+2023-11-22 15:22:57.544  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2023-11-22 15:22:57.546  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2023-11-22 15:22:57.546  INFO 12576 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:plage'
+2023-11-22 15:22:57.624  INFO 12576 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-22 15:22:57.635  INFO 12576 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-22 15:22:57.902  INFO 12576 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-22 15:22:57.903  INFO 12576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:22:58.387  INFO 12576 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6eebf64, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@145f714e, org.springframework.security.web.context.SecurityContextPersistenceFilter@701f2c9a, org.springframework.security.web.header.HeaderWriterFilter@3d2251d, org.springframework.security.web.authentication.logout.LogoutFilter@487388fe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6f4fbd9a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d655fdd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f8d79a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53ee1cff, org.springframework.security.web.session.SessionManagementFilter@1a689747, org.springframework.security.web.access.ExceptionTranslationFilter@4dd61a2e, org.springframework.security.web.access.intercept.AuthorizationFilter@528ef9b3]
+2023-11-22 15:22:58.436  WARN 12576 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-22 15:22:58.573  INFO 12576 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-11-22 15:22:59.504  INFO 12576 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-22 15:22:59.514  INFO 12576 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+2023-11-22 15:22:59.541  INFO 12576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-22 15:22:59.549  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Started PlagesApplication in 3.897 seconds (JVM running for 821.861)
+2023-11-22 15:22:59.585  INFO 12576 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-22 15:22:59.593 ERROR 12576 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.Error: Unresolved compilation problems: 
+	The method save(S) in the type CrudRepository<Parasol,Long> is not applicable for the arguments (Parasol)
+	The constructor Parasol(byte, File) is undefined
+
+	at fr.humanbooster.fx.plages.initialisation.AjoutDonneesInitiales.ajouterParasols(AjoutDonneesInitiales.java:113) ~[classes/:na]
+	at fr.humanbooster.fx.plages.initialisation.AjoutDonneesInitiales.run(AjoutDonneesInitiales.java:66) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.15.jar:2.7.15]
+	at fr.humanbooster.fx.plages.PlagesApplication.main(PlagesApplication.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.15.jar:2.7.15]
+
+2023-11-22 15:22:59.619  INFO 12576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:22:59.833  WARN 12576 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-11-22 15:22:59.834  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2023-11-22 15:22:59.835  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2023-11-22 15:24:08.859  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Starting PlagesApplication using Java 17.0.7 on HBPC-HWMBD15-004 with PID 12576 (C:\Users\HB\eclipse-workspace\plages20230912\target\classes started by HB in C:\Users\HB\eclipse-workspace\plages20230912)
+2023-11-22 15:24:08.860  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-11-22 15:24:10.655  INFO 12576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-22 15:24:10.738  INFO 12576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 10 JPA repository interfaces.
+2023-11-22 15:24:10.903  INFO 12576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-22 15:24:10.904  INFO 12576 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-22 15:24:10.904  INFO 12576 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-11-22 15:24:11.119  INFO 12576 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-11-22 15:24:11.124  INFO 12576 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-22 15:24:11.124  INFO 12576 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2259 ms
+2023-11-22 15:24:11.165  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2023-11-22 15:24:11.167  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2023-11-22 15:24:11.168  INFO 12576 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:plage'
+2023-11-22 15:24:11.231  INFO 12576 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-22 15:24:11.243  INFO 12576 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-22 15:24:11.488  INFO 12576 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-22 15:24:11.490  INFO 12576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:24:12.175  INFO 12576 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@25e4163e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d63717e, org.springframework.security.web.context.SecurityContextPersistenceFilter@34303f8f, org.springframework.security.web.header.HeaderWriterFilter@3638e057, org.springframework.security.web.authentication.logout.LogoutFilter@76aa5ef5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2c088cf0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@225f14e4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@531462a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5edca603, org.springframework.security.web.session.SessionManagementFilter@32845a77, org.springframework.security.web.access.ExceptionTranslationFilter@761c0ca9, org.springframework.security.web.access.intercept.AuthorizationFilter@11dad1e]
+2023-11-22 15:24:12.218  WARN 12576 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-22 15:24:12.380  INFO 12576 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-11-22 15:24:13.322  INFO 12576 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-22 15:24:13.327  INFO 12576 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+2023-11-22 15:24:13.346  INFO 12576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-22 15:24:13.352  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Started PlagesApplication in 4.553 seconds (JVM running for 895.665)
+2023-11-22 15:24:13.392  INFO 12576 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-22 15:24:13.401 ERROR 12576 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.Error: Unresolved compilation problems: 
+	The method save(S) in the type CrudRepository<Parasol,Long> is not applicable for the arguments (Parasol)
+	The constructor Parasol(byte, File) is undefined
+
+	at fr.humanbooster.fx.plages.initialisation.AjoutDonneesInitiales.ajouterParasols(AjoutDonneesInitiales.java:113) ~[classes/:na]
+	at fr.humanbooster.fx.plages.initialisation.AjoutDonneesInitiales.run(AjoutDonneesInitiales.java:66) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.15.jar:2.7.15]
+	at fr.humanbooster.fx.plages.PlagesApplication.main(PlagesApplication.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.15.jar:2.7.15]
+
+2023-11-22 15:24:13.442  INFO 12576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:24:13.654  WARN 12576 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-11-22 15:24:13.656  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2023-11-22 15:24:13.659  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2023-11-22 15:24:20.142  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Starting PlagesApplication using Java 17.0.7 on HBPC-HWMBD15-004 with PID 12576 (C:\Users\HB\eclipse-workspace\plages20230912\target\classes started by HB in C:\Users\HB\eclipse-workspace\plages20230912)
+2023-11-22 15:24:20.143  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-11-22 15:24:21.148  INFO 12576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-22 15:24:21.230  INFO 12576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 10 JPA repository interfaces.
+2023-11-22 15:24:21.408  INFO 12576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-22 15:24:21.409  INFO 12576 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-22 15:24:21.409  INFO 12576 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-11-22 15:24:21.638  INFO 12576 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-11-22 15:24:21.643  INFO 12576 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-22 15:24:21.643  INFO 12576 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1484 ms
+2023-11-22 15:24:21.693  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2023-11-22 15:24:21.697  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2023-11-22 15:24:21.698  INFO 12576 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:plage'
+2023-11-22 15:24:21.789  INFO 12576 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-22 15:24:21.800  INFO 12576 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-22 15:24:21.992  INFO 12576 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-22 15:24:21.993  INFO 12576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:24:22.506  INFO 12576 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@178f1e9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7e717edc, org.springframework.security.web.context.SecurityContextPersistenceFilter@347a5255, org.springframework.security.web.header.HeaderWriterFilter@20b1a35b, org.springframework.security.web.authentication.logout.LogoutFilter@c439f2b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@34f971f3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@402f05bd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6da9cd98, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@147be68c, org.springframework.security.web.session.SessionManagementFilter@4a39bb43, org.springframework.security.web.access.ExceptionTranslationFilter@5ee54897, org.springframework.security.web.access.intercept.AuthorizationFilter@11d29e3f]
+2023-11-22 15:24:22.542  WARN 12576 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-22 15:24:22.694  INFO 12576 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-11-22 15:24:23.659  INFO 12576 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-22 15:24:23.665  INFO 12576 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+2023-11-22 15:24:23.695  INFO 12576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-22 15:24:23.706  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Started PlagesApplication in 3.983 seconds (JVM running for 906.019)
+2023-11-22 15:24:23.759  INFO 12576 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-22 15:24:23.765 ERROR 12576 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.Error: Unresolved compilation problems: 
+	The method save(S) in the type CrudRepository<Parasol,Long> is not applicable for the arguments (Parasol)
+	The constructor Parasol(byte, File) is undefined
+
+	at fr.humanbooster.fx.plages.initialisation.AjoutDonneesInitiales.ajouterParasols(AjoutDonneesInitiales.java:113) ~[classes/:na]
+	at fr.humanbooster.fx.plages.initialisation.AjoutDonneesInitiales.run(AjoutDonneesInitiales.java:66) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.15.jar:2.7.15]
+	at fr.humanbooster.fx.plages.PlagesApplication.main(PlagesApplication.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.15.jar:2.7.15]
+
+2023-11-22 15:24:23.791  INFO 12576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:24:24.005  WARN 12576 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-11-22 15:24:24.006  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2023-11-22 15:24:24.007  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2023-11-22 15:27:29.326  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Starting PlagesApplication using Java 17.0.7 on HBPC-HWMBD15-004 with PID 12576 (C:\Users\HB\eclipse-workspace\plages20230912\target\classes started by HB in C:\Users\HB\eclipse-workspace\plages20230912)
+2023-11-22 15:27:29.327  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-11-22 15:27:31.474  INFO 12576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-22 15:27:31.651  INFO 12576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 147 ms. Found 10 JPA repository interfaces.
+2023-11-22 15:27:31.890  INFO 12576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-22 15:27:31.891  INFO 12576 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-22 15:27:31.891  INFO 12576 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-11-22 15:27:32.143  INFO 12576 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-11-22 15:27:32.146  INFO 12576 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-22 15:27:32.147  INFO 12576 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2813 ms
+2023-11-22 15:27:32.186  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2023-11-22 15:27:32.189  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2023-11-22 15:27:32.190  INFO 12576 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:plage'
+2023-11-22 15:27:32.273  INFO 12576 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-22 15:27:32.282  INFO 12576 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-22 15:27:32.496  INFO 12576 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-22 15:27:32.498  INFO 12576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:27:33.185  INFO 12576 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@559c62ae, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a76f5bb, org.springframework.security.web.context.SecurityContextPersistenceFilter@5cf7047d, org.springframework.security.web.header.HeaderWriterFilter@1b71c20, org.springframework.security.web.authentication.logout.LogoutFilter@7387a662, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3727085e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60449418, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@592bd22c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a3df3e7, org.springframework.security.web.session.SessionManagementFilter@3c2e5f9b, org.springframework.security.web.access.ExceptionTranslationFilter@5fec7c7f, org.springframework.security.web.access.intercept.AuthorizationFilter@1be67306]
+2023-11-22 15:27:33.235  WARN 12576 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-22 15:27:33.411  INFO 12576 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-11-22 15:27:34.746  INFO 12576 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-22 15:27:34.753  INFO 12576 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+2023-11-22 15:27:34.774  INFO 12576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-22 15:27:34.784  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Started PlagesApplication in 5.554 seconds (JVM running for 1097.097)
+2023-11-22 15:27:34.818  INFO 12576 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-22 15:27:34.822 ERROR 12576 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.Error: Unresolved compilation problems: 
+	The method save(S) in the type CrudRepository<Parasol,Long> is not applicable for the arguments (Parasol)
+	The constructor Parasol(byte, File) is undefined
+
+	at fr.humanbooster.fx.plages.initialisation.AjoutDonneesInitiales.ajouterParasols(AjoutDonneesInitiales.java:115) ~[classes/:na]
+	at fr.humanbooster.fx.plages.initialisation.AjoutDonneesInitiales.run(AjoutDonneesInitiales.java:66) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.15.jar:2.7.15]
+	at fr.humanbooster.fx.plages.PlagesApplication.main(PlagesApplication.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.15.jar:2.7.15]
+
+2023-11-22 15:27:34.845  INFO 12576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:27:35.061  WARN 12576 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-11-22 15:27:35.062  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2023-11-22 15:27:35.063  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2023-11-22 15:27:43.698  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Starting PlagesApplication using Java 17.0.7 on HBPC-HWMBD15-004 with PID 12576 (C:\Users\HB\eclipse-workspace\plages20230912\target\classes started by HB in C:\Users\HB\eclipse-workspace\plages20230912)
+2023-11-22 15:27:43.706  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-11-22 15:27:44.620  INFO 12576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-22 15:27:44.703  INFO 12576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 10 JPA repository interfaces.
+2023-11-22 15:27:44.853  INFO 12576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-22 15:27:44.854  INFO 12576 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-22 15:27:44.854  INFO 12576 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-11-22 15:27:45.053  INFO 12576 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-11-22 15:27:45.060  INFO 12576 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-22 15:27:45.060  INFO 12576 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1277 ms
+2023-11-22 15:27:45.106  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2023-11-22 15:27:45.109  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2023-11-22 15:27:45.109  INFO 12576 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:plage'
+2023-11-22 15:27:45.179  INFO 12576 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-22 15:27:45.192  INFO 12576 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-22 15:27:45.506  INFO 12576 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-22 15:27:45.508  INFO 12576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:27:45.982  INFO 12576 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44a32d22, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31e801d8, org.springframework.security.web.context.SecurityContextPersistenceFilter@42a84063, org.springframework.security.web.header.HeaderWriterFilter@17251ac4, org.springframework.security.web.authentication.logout.LogoutFilter@4293aa63, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@18edba74, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4583e4e9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a4f35a7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@482b7368, org.springframework.security.web.session.SessionManagementFilter@74a99cd5, org.springframework.security.web.access.ExceptionTranslationFilter@706ee84f, org.springframework.security.web.access.intercept.AuthorizationFilter@1b3c5c94]
+2023-11-22 15:27:46.022  WARN 12576 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-22 15:27:46.176  INFO 12576 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-11-22 15:27:47.096  INFO 12576 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-22 15:27:47.100  INFO 12576 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+2023-11-22 15:27:47.123  INFO 12576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-22 15:27:47.131  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Started PlagesApplication in 3.566 seconds (JVM running for 1109.444)
+2023-11-22 15:27:47.391  INFO 12576 --- [restartedMain] f.h.f.p.i.AjoutDonneesInitiales          : Ajout de 10 clients
+2023-11-22 15:27:48.349  INFO 12576 --- [restartedMain] f.h.f.p.i.AjoutDonneesInitiales          : nb de clients ajoutés:10
+2023-11-22 15:27:48.603  INFO 12576 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-11-22 15:36:07.030  INFO 12576 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-22 15:36:07.031  INFO 12576 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-22 15:36:07.033  INFO 12576 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
