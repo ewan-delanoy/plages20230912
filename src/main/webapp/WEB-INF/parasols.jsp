@@ -23,7 +23,7 @@
 <ul>
 <!-- Le forEach ci-dessous parcourt le contenu de la page de parasols -->
 <c:forEach items="${pageDeParasols.content}" var="parasol">
-	<li>${parasol.numEmplacement} en file ${parasol.file.numero} (${parasol.file.prixJournalier} &euro;) <a href="parasol?ID_PARASOL=${parasol.id}">Modifier</a></li>
+	<li>${parasol.numEmplacement} en file ${parasol.file.numero} (${parasol.file.prixJournalier} &euro;) <a href="parasol?ID_PARASOL=${parasol.parasolId}">Modifier</a></li>
 </c:forEach>
 </ul>
 <c:if test="${!pageDeParasols.isFirst()}">

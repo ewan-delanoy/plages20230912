@@ -55,7 +55,7 @@ public class ClientServiceImpl implements ClientService {
 			.email(clientDto.getEmail())
 			.motDePasse(passwordEncoder.encode(clientDto.getMotDePasse()))
 			.pays(paysService.recupererPays(clientDto.getPaysDto().getCode()))
-			.lienDeParente(lienDeParenteService.recupererLienDeParente(clientDto.getLienDeParenteDto().getIdLienDeParente()))
+			.lienDeParente(lienDeParenteService.recupererLienDeParente(clientDto.getLienDeParenteDto().getLienDeParenteId()))
 			.build();
 		clientMapper.toEntity(clientDto);
 		return clientDao.save(client);

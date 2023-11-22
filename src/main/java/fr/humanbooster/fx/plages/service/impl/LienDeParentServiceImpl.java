@@ -22,7 +22,7 @@ public class LienDeParentServiceImpl implements LienDeParenteService {
 
 	@Override
 	public LienDeParente recupererLienDeParente(Long id) {
-		return lienDeParenteDao.findById(id).orElse(null);
+		return lienDeParenteDao.findByLienDeParenteId(id)/*.orElse(null)*/;
 	}
 
 	@Override

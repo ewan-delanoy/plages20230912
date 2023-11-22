@@ -36,7 +36,7 @@ public class ParasolServiceImpl implements ParasolService {
 
 	@Override
 	public Parasol recupererParasol(Long idParasol) {
-		return parasolDao.findByIdParasol(idParasol)/*.orElse(null)*/;
+		return parasolDao.findByParasolId(idParasol)/*.orElse(null)*/;
 	}
 
 	@Override

@@ -23,7 +23,7 @@ public class Parasol {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long idParasol;
+	private Long parasolId;
 	
 	private byte numEmplacement;
 

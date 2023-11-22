@@ -14,7 +14,7 @@
 <ul>
 <!-- Le forEach ci-dessous parcourt le contenu de la page de clients -->
 <c:forEach items="${pageDeClients.content}" var="client">
-	<li><img src="images/${client.idUtilisateur}.jpg" height="200"> ${client.nom} ${client.prenom} ${client.pays.nom} ${client.dateHeureInscription} <a href="client?ID_CLIENT=${client.idUtilisateur}">Modifier</a> <a href="televerserAvatar?ID_UTILISATEUR=${client.idUtilisateur}">Téléverser Avatar</a></li>
+	<li><img src="images/${client.utilisateurId}.jpg" height="200"> ${client.nom} ${client.prenom} ${client.pays.nom} ${client.dateHeureInscription} <a href="client?ID_CLIENT=${client.utilisateurId}">Modifier</a> <a href="televerserAvatar?ID_UTILISATEUR=${client.utilisateurId}">Téléverser Avatar</a></li>
 </c:forEach>
 </ul>
 <c:if test="${!pageDeClients.isFirst()}">

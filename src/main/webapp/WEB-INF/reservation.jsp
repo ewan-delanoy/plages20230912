@@ -18,7 +18,7 @@
 <form:label path="client" class="col-sm-1 control-label">Client</form:label>
 <form:select path="client" multiple="false">
 <form:option value="0">Merci de choisir un client</form:option>
-<form:options items="${clients}" itemValue="id" itemLabel="nomEtPrenom"/>
+<form:options items="${clients}" itemValue="utilisateurId" itemLabel="nomEtPrenom"/>
 </form:select><form:errors cssClass="erreur" path="client"/>
 <br>
 <form:label path="dateDebut" class="col-sm-1 control-label">Date de début</form:label>
@@ -32,7 +32,7 @@
 <form:label path="parasols" class="col-sm-1 control-label">Parasol(s)</form:label>
 <form:select path="parasols" multiple="true">
 <form:option value="0">Merci de choisir un ou plusieurs parasols</form:option>
-<form:options items="${parasols}" itemValue="id" itemLabel="numeroEmplacementEtNumeroDeFile"/>
+<form:options items="${parasols}" itemValue="parasolId" itemLabel="numeroEmplacementEtNumeroDeFile"/>
 </form:select><form:errors cssClass="erreur" path="parasols"/>
 <br>
 <form:label path="remarques" class="col-sm-1 control-label">Remarques</form:label>
@@ -40,7 +40,7 @@
 <br>
 <form:label path="lienDeParente" class="col-sm-1 control-label">Lien de parenté</form:label><form:select path="lienDeParente">
 <form:option value="0">Merci de choisir un lien de parenté</form:option>
-<form:options items="${liensDeParente}" itemValue="id" itemLabel="nom"/>
+<form:options items="${liensDeParente}" itemValue="lienDeParenteId" itemLabel="nom"/>
 </form:select><form:errors cssClass="erreur" path="lienDeParente"/>
 <br>
 <form:button>Enregistrer</form:button>
