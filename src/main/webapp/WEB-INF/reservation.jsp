@@ -38,6 +38,11 @@
 <form:label path="remarques" class="col-sm-1 control-label">Remarques</form:label>
 <form:textarea path="remarques"/>
 <br>
+<form:label path="lienDeParente" class="col-sm-1 control-label">Lien de parenté</form:label><form:select path="lienDeParente">
+<form:option value="0">Merci de choisir un lien de parenté</form:option>
+<form:options items="${liensDeParente}" itemValue="id" itemLabel="nom"/>
+</form:select><form:errors cssClass="erreur" path="lienDeParente"/>
+<br>
 <form:button>Enregistrer</form:button>
 </form:form>
 <jsp:include page="include/piedDePage.jsp"></jsp:include>

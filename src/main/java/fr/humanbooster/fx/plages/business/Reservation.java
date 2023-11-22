@@ -76,4 +76,8 @@ public class Reservation {
 	
 	private String cryptogramme;
 	
+	@ManyToOne
+	@NotNull(message="Merci de choisir un lien de parenté")
+	private LienDeParente lienDeParente;
+	
 }

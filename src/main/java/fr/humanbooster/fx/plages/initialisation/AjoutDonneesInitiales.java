@@ -204,6 +204,7 @@ public class AjoutDonneesInitiales implements CommandLineRunner {
 
 		List<Client> clients = clientDao.findAll();
 		List<Parasol> parasols = parasolDao.findAll();
+		LienDeParente lienDeParenteAucun = lienDeParenteDao.findByNom("Aucun lien");
 		Statut statutEnAttente = statutDao.findByNom("en attente de traitement");
 
 		for (int i = 0; i < nbReservationsAAjouter; i++) {
@@ -212,6 +213,7 @@ public class AjoutDonneesInitiales implements CommandLineRunner {
 			Reservation reservation = Reservation.builder().client(
 					clients.get(random.nextInt(clients.size())))
 					.parasols(Arrays.asList(parasols.get(random.nextInt(parasols.size())))).dateDebut(dateDebut)
+					.lienDeParente(lienDeParenteAucun)
 					.dateFin(dateFin).statut(statutEnAttente).build();
 			reservationDao.save(reservation);			
 		}
