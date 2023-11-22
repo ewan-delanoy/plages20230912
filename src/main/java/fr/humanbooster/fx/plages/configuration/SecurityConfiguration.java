@@ -36,6 +36,7 @@ public class SecurityConfiguration {
 						.antMatchers("/parasols").authenticated()
 						.antMatchers(HttpMethod.GET, "/clients").hasRole("ADMIN")
 						.antMatchers(HttpMethod.POST, "/reservation").hasRole("ADMIN")
+						.antMatchers(HttpMethod.POST, "/ures").hasRole("ADMIN")
 						.antMatchers(HttpMethod.GET, "/reservations").hasAnyRole("USER", "ADMIN")
 					    )
 				.headers(header -> header.frameOptions().disable());

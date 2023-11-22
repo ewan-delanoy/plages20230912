@@ -117,17 +117,72 @@ public class ReservationController {
 		return new ModelAndView("redirect:/reservations");
 	}
 	
+	@GetMapping(value = {"ures"})
+	public ModelAndView getUsermadeReservation(
+			@RequestParam(name="ID_CLIENT", required=false) Long idClient,
+			@RequestParam(name="ID_RESERVATION", required=false) Long idReservation,
+			@RequestParam(name="NB_PARASOLS", required=false) Integer nbParasols) {
+		
+		ModelAndView mav = new ModelAndView("usermadeReservation");
+		Reservation reservation = null;
+		
+		if (idReservation!=null) {
+			reservation = reservationService.recupererReservation(idReservation);
+		}
+		else {
+			reservation = new Reservation();
+			if (idClient!=null) {
+				reservation.setClient(clientService.recupererClient(idClient));
+			}
+			if (nbParasols!=null) {
+				List<Parasol> parasols = new ArrayList<>();
+				for (int i = 0; i < nbParasols; i++) {
+					parasols.add(parasolService.recupererParasol(1L));					
+				}
+				reservation.setParasols(parasols);
+			}
+		}
+		mav.addObject("reservation", reservation);
+		mav.addObject("clients", clientService.recupererClients());
+		mav.addObject("parasols", parasolService.recupererParasols());
+                mav.addObject("equipements", equipementService.recupererEquipements());
+		mav.addObject("liensDeParente", lienDeParenteService.recupererLiensDeParente());
+		return mav;
+	}
+	
+	@PostMapping("ures")
+	public ModelAndView postUsermadeReservation(@Valid @ModelAttribute Reservation reservation, BindingResult result) {
+		System.out.println("Entering ures at ReservationController.postReservation");
+		if (result.hasErrors()) {
+			System.out.println(result);
+			Long clientId = (reservation.getClient() != null)?reservation.getClient().getUtilisateurId():null;
+			ModelAndView mav = getReservation(clientId, reservation.getReservationId(),  reservation.getParasols().size());
+			mav.addObject("reservation", reservation);
+			return mav;
+		}
+		reservationService.enregistrerReservation(reservation);
+		return new ModelAndView("redirect:/reservations");
+	}
+	
+
+
+
+
+	
+	
+	/*
 	@GetMapping(value = {"brouillon"})
 	public ModelAndView getBrouillon() {
 		
 		ModelAndView mav = new ModelAndView("brouillon");
 		 System.out.println("PASSSE ICI");
-		/** ModelAndView mav = new ModelAndView("equipement", new Equipement());*/
+		 ModelAndView mav = new ModelAndView("equipement", new Equipement());
 		mav.addObject("equipements", equipementService.recupererEquipements());
 		mav.addObject("parasols", parasolService.recupererParasols());
 		mav.addObject("brouillon");	
 		return mav;
 	}
+	*/
 	
 //	@PostMapping("brouillon")
 //	public ModelAndView postBrouillon(@ModelAttribute Brouillon brouillon, BindingResult result) {
