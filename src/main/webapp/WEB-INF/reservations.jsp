@@ -14,7 +14,7 @@
 <ul>
 <!-- Le forEach ci-dessous parcourt le contenu de la page de reservations -->
 <c:forEach items="${pageDeReservations.content}" var="reservation">
-	<li>${reservation.client.nom} ${reservation.client.prenom} ${reservation.client.pays.nom} du ${reservation.dateDebut} au ${reservation.dateFin} <a href="reservation?ID_RESERVATION=${reservation.idReservation}">Modifier</a> <a href="reservationPDF?ID_RESERVATION=${reservation.idReservation}">PDF</a></li>
+	<li>${reservation.client.nom} ${reservation.client.prenom} ${reservation.client.pays.nom} du ${reservation.dateDebut} au ${reservation.dateFin} <a href="reservation?ID_RESERVATION=${reservation.reservationId}">Modifier</a> <a href="reservationPDF?ID_RESERVATION=${reservation.reservationId}">PDF</a></li>
 </c:forEach>
 </ul>
 <c:if test="${!pageDeReservations.isFirst()}">

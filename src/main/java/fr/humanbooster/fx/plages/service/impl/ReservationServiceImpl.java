@@ -12,6 +12,8 @@ import fr.humanbooster.fx.plages.business.Concessionnaire;
 import fr.humanbooster.fx.plages.business.Reservation;
 import fr.humanbooster.fx.plages.business.Statut;
 import fr.humanbooster.fx.plages.dao.ReservationDao;
+import fr.humanbooster.fx.plages.exception.ClientInexistantException;
+import fr.humanbooster.fx.plages.exception.SuppressionClientImpossibleException;
 import fr.humanbooster.fx.plages.service.ReservationService;
 import lombok.AllArgsConstructor;
 
@@ -94,4 +96,14 @@ public class ReservationServiceImpl implements ReservationService {
 		return reservationDao.findAllByCurrentWeek();
 	}
 
+	@Override
+    public boolean supprimerReservation(Long id) {
+		Reservation reservation = recupererReservation(id);
+		if (reservation==null) {
+			throw new ClientInexistantException("Cette réservation n'existe pas");
+		}
+        reservationDao.delete(reservation);
+        return true;
+    }
+	
 }

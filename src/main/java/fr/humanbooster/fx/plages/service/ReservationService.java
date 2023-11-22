@@ -57,4 +57,6 @@ public interface ReservationService {
 
 	List<Reservation> recupererReservationsDeLaSemaineEnCours();
 
+	public boolean supprimerReservation(Long id);
+	
 }
