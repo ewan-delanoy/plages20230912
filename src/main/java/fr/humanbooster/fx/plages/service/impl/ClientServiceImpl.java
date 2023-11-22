@@ -38,7 +38,7 @@ public class ClientServiceImpl implements ClientService {
 
 	@Override
 	public Client recupererClient(Long idClient) {
-		return clientDao.findByIdUtilisateur(idClient)/* .orElse(null) */;
+		return clientDao.findByUtilisateurId(idClient)/* .orElse(null) */;
 	}
 
 	@Override

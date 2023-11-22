@@ -25,7 +25,7 @@ public abstract class Utilisateur {
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator = "client_sequence")
 	@SequenceGenerator(name="client_sequence", initialValue = 1000)
-	protected Long idUtilisateur;
+	protected Long utilisateurId;
 	
 	@Column(length=80)
 	protected String nom;

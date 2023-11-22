@@ -120,6 +120,6 @@ public interface ClientDao extends JpaRepository<Client, Long> {
 
 	boolean existsByEmail(String string);
 	
-	Client findByIdUtilisateur(Long username);
+	Client findByUtilisateurId(Long username);
 
 }

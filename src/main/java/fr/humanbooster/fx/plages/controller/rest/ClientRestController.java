@@ -71,8 +71,8 @@ public class ClientRestController {
     @PutMapping("clients")
     @ResponseStatus(code = HttpStatus.OK)
     public ResponseEntity<Client> putClient(@RequestBody ClientDto clientDto) {
-        if (clientDto.getIdUtilisateur() != null) {
-            if (clientService.recupererClient(clientDto.getIdUtilisateur()) != null) {
+        if (clientDto.getUtilisateurId() != null) {
+            if (clientService.recupererClient(clientDto.getUtilisateurId()) != null) {
                 Client client = clientService.enregistrerClient(clientDto);
                 return ResponseEntity.status(200).body(client);
             } else {

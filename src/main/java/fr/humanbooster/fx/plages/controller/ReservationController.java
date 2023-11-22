@@ -24,6 +24,7 @@ import fr.humanbooster.fx.plages.business.Reservation;
 import fr.humanbooster.fx.plages.service.ClientService;
 import fr.humanbooster.fx.plages.service.EquipementService;
 import fr.humanbooster.fx.plages.service.FileService;
+import fr.humanbooster.fx.plages.service.LienDeParenteService;
 import fr.humanbooster.fx.plages.service.ParasolService;
 import fr.humanbooster.fx.plages.service.ReservationService;
 import fr.humanbooster.fx.plages.view.ReservationExportPdf;
@@ -38,7 +39,7 @@ public class ReservationController {
 	private final ReservationService reservationService;
 	private final ParasolService parasolService;
 	private final ClientService clientService;
-	private final FileService fileService;
+	private final LienDeParenteService lienDeParenteService;
 	private final EquipementService equipementService;
 	
 	@GetMapping({"reservations"})
@@ -98,6 +99,7 @@ public class ReservationController {
 		mav.addObject("reservation", reservation);
 		mav.addObject("clients", clientService.recupererClients());
 		mav.addObject("parasols", parasolService.recupererParasols());
+		mav.addObject("liensDeParente", lienDeParenteService.recupererLiensDeParente());
 		return mav;
 	}
 	
@@ -106,7 +108,7 @@ public class ReservationController {
 		System.out.println("Entering ReservationController.postReservation");
 		if (result.hasErrors()) {
 			System.out.println(result);
-			Long clientId = (reservation.getClient() != null)?reservation.getClient().getIdUtilisateur():null;
+			Long clientId = (reservation.getClient() != null)?reservation.getClient().getUtilisateurId():null;
 			ModelAndView mav = getReservation(clientId, reservation.getReservationId(),  reservation.getParasols().size());
 			mav.addObject("reservation", reservation);
 			return mav;
