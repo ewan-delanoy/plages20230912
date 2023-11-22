@@ -25,10 +25,6 @@ public class Equipement {
 	private byte nbDeLits;
 	private byte nbDeFauteuils;
 
-	@OneToMany(mappedBy = "equipement")
-	@ToString.Exclude
-	@JsonIgnore
-	private List<ParasolEquipe> parasolsequipes;
 
 	public Equipement(byte nbDeLits, byte nbDeFauteuils) {
 		super();
