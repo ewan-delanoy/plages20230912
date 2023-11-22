@@ -133,13 +133,11 @@ public class AjoutDonneesInitiales implements CommandLineRunner {
 	public void ajouterClientFixe() {
 		if (!clientDao.existsByEmail("plagiste@humanbooster.fr")) {
 			List<Pays> pays = paysDao.findAll();
-			LienDeParente lienDeParenteAucun = lienDeParenteDao.findByNom("Aucun lien");
 			Client client = Client.builder().nom(faker.name().lastName())
 				.prenom(faker.name().lastName())
 				.pays(pays.get(random.nextInt(pays.size())))
 				.email("plagiste@humanbooster.fr")
 				.motDePasse(passwordEncoder.encode("12345678"))
-				.lienDeParente(lienDeParenteAucun)
 				.build();
 			clientDao.save(client);
 		}
@@ -172,7 +170,6 @@ public class AjoutDonneesInitiales implements CommandLineRunner {
 					.pays(pays.get(random.nextInt(pays.size())))
 					.email(faker.internet().emailAddress())
 					.motDePasse(passwordEncoder.encode("12345678"))
-					.lienDeParente(lienDeParenteAucun)
 					.build();
 			map.put(client.getEmail(), client);
 		}

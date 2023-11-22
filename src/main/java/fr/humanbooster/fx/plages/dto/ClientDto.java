@@ -23,6 +23,4 @@ public class ClientDto {
 	
 	PaysDto paysDto;
 	
-	LienDeParenteDto lienDeParenteDto;
-	
 }

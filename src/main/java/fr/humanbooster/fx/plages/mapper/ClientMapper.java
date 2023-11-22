@@ -11,13 +11,11 @@ import fr.humanbooster.fx.plages.dto.ClientDto;
 public interface ClientMapper {
 
 	@Mapping(source = "paysDto", target = "pays")
-	@Mapping(source = "lienDeParenteDto", target = "lienDeParente")
 	@Mapping(target = "reservations", ignore = true)
 	@Mapping(target = "dateHeureInscription", ignore = true)
 	Client toEntity(ClientDto clientDto);
 
 	@Mapping(source = "pays", target = "paysDto")
-	@Mapping(source = "lienDeParente", target = "lienDeParenteDto")
 	ClientDto toDto(Client client);
 
 }

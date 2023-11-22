@@ -87,8 +87,6 @@ public interface ClientDao extends JpaRepository<Client, Long> {
     // Requête par dérivation (query method)
 	List<Client> findAllByPays(Pays pays);
 
-    // Requête par dérivation (query method)
-	List<Client> findByPaysAndLienDeParente(Pays pays, LienDeParente lienDeParente);
 
 	List<Client> findByPaysAndDateHeureInscriptionBetween(Pays pays, LocalDateTime dateDebut, LocalDateTime dateFin);
 	

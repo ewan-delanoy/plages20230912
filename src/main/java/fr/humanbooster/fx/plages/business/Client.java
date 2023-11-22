@@ -31,10 +31,6 @@ public class Client extends Utilisateur {
 	@ManyToOne
 	@NotNull(message="{client.pays.manquant}")
 	private Pays pays;
-
-	@ManyToOne
-	@NotNull(message="Merci de choisir un lien de parenté")
-	private LienDeParente lienDeParente;
 	
 	@OneToMany(mappedBy="client")
 	@ToString.Exclude

@@ -22,11 +22,6 @@
 <form:options items="${pays}" itemValue="code" itemLabel="nom"/>
 </form:select><form:errors cssClass="erreur" path="pays"/>
 <br>
-<form:label path="lienDeParente" class="col-sm-1 control-label">Lien de parenté</form:label>
-<form:select path="lienDeParente">
-<form:option value="0">Merci de choisir un lien de parenté</form:option>
-<form:options items="${liensDeParente}" itemValue="lienDeParenteId" itemLabel="nom"/>
-</form:select><form:errors cssClass="erreur" path="lienDeParente"/>
 <div class="col-sm-1 control-label"></div><form:button class="btn btn-success">Enregistrer</form:button>
 </form:form>
 <jsp:include page="include/piedDePage.jsp"></jsp:include>

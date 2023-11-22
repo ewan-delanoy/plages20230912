@@ -7737,3 +7737,903 @@ Caused by: java.lang.ClassNotFoundException: ParasolEquipe
 2023-11-22 14:53:32.634 ERROR 14792 --- [http-nio-8080-exec-6] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@5c7887b9]
 2023-11-22 14:53:32.642 ERROR 14792 --- [http-nio-8080-exec-1] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@60518ef4]
 2023-11-22 14:53:32.648 ERROR 14792 --- [http-nio-8080-exec-7] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@14b9e8ce]
+2023-11-22 15:01:06.659  INFO 14792 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 6 class path changes (0 additions, 1 deletion, 5 modifications)
+2023-11-22 15:01:06.867  INFO 14792 --- [Thread-6] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-22 15:01:06.871  INFO 14792 --- [Thread-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-22 15:01:06.925  INFO 14792 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:01:07.140  WARN 14792 --- [Thread-6] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-11-22 15:01:07.143  INFO 14792 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-22 15:01:07.147  INFO 14792 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-22 15:01:07.333  INFO 14792 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Starting PlagesApplication using Java 17.0.7 on HBPC-HWMBD15-004 with PID 14792 (C:\Users\HB\eclipse-workspace\plages20230912\target\classes started by HB in C:\Users\HB\eclipse-workspace\plages20230912)
+2023-11-22 15:01:07.334  INFO 14792 --- [restartedMain] f.h.fx.plages.PlagesApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-11-22 15:01:09.674  INFO 14792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-22 15:01:09.854  INFO 14792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 178 ms. Found 10 JPA repository interfaces.
+2023-11-22 15:01:10.211  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-22 15:01:10.213  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-22 15:01:10.213  INFO 14792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-11-22 15:01:10.694  INFO 14792 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-11-22 15:01:10.703  INFO 14792 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-22 15:01:10.703  INFO 14792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3361 ms
+2023-11-22 15:01:10.776  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-11-22 15:01:10.781  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-11-22 15:01:10.782  INFO 14792 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:plage'
+2023-11-22 15:01:10.921  INFO 14792 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-22 15:01:10.949  INFO 14792 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-22 15:01:11.531  INFO 14792 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-22 15:01:11.537  INFO 14792 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:01:12.042  WARN 14792 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ajoutDonneesInitiales' defined in file [C:\Users\HB\eclipse-workspace\plages20230912\target\classes\fr\humanbooster\fx\plages\initialisation\AjoutDonneesInitiales.class]: Unsatisfied dependency expressed through constructor parameter 5; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientDao' defined in fr.humanbooster.fx.plages.dao.ClientDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+2023-11-22 15:01:12.043  INFO 14792 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:01:12.245  WARN 14792 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-11-22 15:01:12.246  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-11-22 15:01:12.247  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-11-22 15:01:12.248  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-22 15:01:12.262  INFO 14792 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-22 15:01:12.313 ERROR 14792 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ajoutDonneesInitiales' defined in file [C:\Users\HB\eclipse-workspace\plages20230912\target\classes\fr\humanbooster\fx\plages\initialisation\AjoutDonneesInitiales.class]: Unsatisfied dependency expressed through constructor parameter 5; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientDao' defined in fr.humanbooster.fx.plages.dao.ClientDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.15.jar:2.7.15]
+	at fr.humanbooster.fx.plages.PlagesApplication.main(PlagesApplication.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.15.jar:2.7.15]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientDao' defined in fr.humanbooster.fx.plages.dao.ClientDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.29.jar:5.3.29]
+	... 26 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:107) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:95) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133) ~[na:na]
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1061) ~[na:na]
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:97) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:87) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.Optional.map(Optional.java:260) ~[na:na]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:87) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:365) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:323) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:231) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.util.Lazy.get(Lazy.java:115) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:329) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.29.jar:5.3.29]
+	... 37 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:96) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:119) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:259) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:93) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:103) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	... 59 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property 'lienDeParente' found for type 'Client'
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:91) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:438) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:414) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:367) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330) ~[na:na]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:349) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:332) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:250) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:251) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:384) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:385) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:96) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:89) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	... 63 common frames omitted
+
+2023-11-22 15:01:53.466  INFO 14792 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Starting PlagesApplication using Java 17.0.7 on HBPC-HWMBD15-004 with PID 14792 (C:\Users\HB\eclipse-workspace\plages20230912\target\classes started by HB in C:\Users\HB\eclipse-workspace\plages20230912)
+2023-11-22 15:01:53.467  INFO 14792 --- [restartedMain] f.h.fx.plages.PlagesApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-11-22 15:01:55.880  INFO 14792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-22 15:01:56.039  INFO 14792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157 ms. Found 10 JPA repository interfaces.
+2023-11-22 15:01:56.319  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-22 15:01:56.320  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-22 15:01:56.321  INFO 14792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-11-22 15:01:56.639  INFO 14792 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-11-22 15:01:56.647  INFO 14792 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-11-22 15:01:56.648  INFO 14792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3174 ms
+2023-11-22 15:01:56.712  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-11-22 15:01:56.717  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-11-22 15:01:56.718  INFO 14792 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:plage'
+2023-11-22 15:01:56.815  INFO 14792 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-22 15:01:56.839  INFO 14792 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-22 15:01:57.181  INFO 14792 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-22 15:01:57.183  INFO 14792 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:01:57.584  WARN 14792 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ajoutDonneesInitiales' defined in file [C:\Users\HB\eclipse-workspace\plages20230912\target\classes\fr\humanbooster\fx\plages\initialisation\AjoutDonneesInitiales.class]: Unsatisfied dependency expressed through constructor parameter 5; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientDao' defined in fr.humanbooster.fx.plages.dao.ClientDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+2023-11-22 15:01:57.585  INFO 14792 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:01:57.802  WARN 14792 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-11-22 15:01:57.803  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-11-22 15:01:57.804  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-11-22 15:01:57.805  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-22 15:01:57.818  INFO 14792 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-22 15:01:57.832 ERROR 14792 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ajoutDonneesInitiales' defined in file [C:\Users\HB\eclipse-workspace\plages20230912\target\classes\fr\humanbooster\fx\plages\initialisation\AjoutDonneesInitiales.class]: Unsatisfied dependency expressed through constructor parameter 5; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientDao' defined in fr.humanbooster.fx.plages.dao.ClientDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.15.jar:2.7.15]
+	at fr.humanbooster.fx.plages.PlagesApplication.main(PlagesApplication.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.15.jar:2.7.15]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientDao' defined in fr.humanbooster.fx.plages.dao.ClientDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.29.jar:5.3.29]
+	... 26 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:107) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:95) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133) ~[na:na]
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1061) ~[na:na]
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:97) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:87) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.Optional.map(Optional.java:260) ~[na:na]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:87) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:365) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:323) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:231) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.util.Lazy.get(Lazy.java:115) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:329) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.29.jar:5.3.29]
+	... 37 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:96) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:119) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:259) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:93) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:103) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	... 59 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property 'lienDeParente' found for type 'Client'
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:91) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:438) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:414) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:367) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330) ~[na:na]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:349) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:332) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:250) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:251) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:384) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:385) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:96) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:89) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	... 63 common frames omitted
+
+2023-11-22 15:02:19.724  INFO 14792 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Starting PlagesApplication using Java 17.0.7 on HBPC-HWMBD15-004 with PID 14792 (C:\Users\HB\eclipse-workspace\plages20230912\target\classes started by HB in C:\Users\HB\eclipse-workspace\plages20230912)
+2023-11-22 15:02:19.724  INFO 14792 --- [restartedMain] f.h.fx.plages.PlagesApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-11-22 15:02:22.898  INFO 14792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-22 15:02:23.218  INFO 14792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 318 ms. Found 10 JPA repository interfaces.
+2023-11-22 15:02:23.548  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-22 15:02:23.549  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-22 15:02:23.549  INFO 14792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-11-22 15:02:23.969  INFO 14792 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-11-22 15:02:23.982  INFO 14792 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-11-22 15:02:23.983  INFO 14792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4251 ms
+2023-11-22 15:02:24.033  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2023-11-22 15:02:24.037  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2023-11-22 15:02:24.037  INFO 14792 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:plage'
+2023-11-22 15:02:24.126  INFO 14792 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-22 15:02:24.149  INFO 14792 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-22 15:02:24.398  INFO 14792 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-22 15:02:24.399  INFO 14792 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:02:24.755  WARN 14792 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ajoutDonneesInitiales' defined in file [C:\Users\HB\eclipse-workspace\plages20230912\target\classes\fr\humanbooster\fx\plages\initialisation\AjoutDonneesInitiales.class]: Unsatisfied dependency expressed through constructor parameter 5; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientDao' defined in fr.humanbooster.fx.plages.dao.ClientDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+2023-11-22 15:02:24.758  INFO 14792 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:02:24.973  WARN 14792 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-11-22 15:02:24.974  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-11-22 15:02:24.975  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2023-11-22 15:02:24.976  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-22 15:02:24.989  INFO 14792 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-22 15:02:25.002 ERROR 14792 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ajoutDonneesInitiales' defined in file [C:\Users\HB\eclipse-workspace\plages20230912\target\classes\fr\humanbooster\fx\plages\initialisation\AjoutDonneesInitiales.class]: Unsatisfied dependency expressed through constructor parameter 5; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientDao' defined in fr.humanbooster.fx.plages.dao.ClientDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.15.jar:2.7.15]
+	at fr.humanbooster.fx.plages.PlagesApplication.main(PlagesApplication.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.15.jar:2.7.15]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientDao' defined in fr.humanbooster.fx.plages.dao.ClientDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.29.jar:5.3.29]
+	... 26 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:107) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:95) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133) ~[na:na]
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1061) ~[na:na]
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:97) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:87) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.Optional.map(Optional.java:260) ~[na:na]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:87) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:365) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:323) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:231) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.util.Lazy.get(Lazy.java:115) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:329) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.29.jar:5.3.29]
+	... 37 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:96) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:119) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:259) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:93) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:103) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	... 59 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property 'lienDeParente' found for type 'Client'
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:91) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:438) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:414) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:367) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330) ~[na:na]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:349) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:332) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:250) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:251) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:384) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:385) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:96) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:89) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	... 63 common frames omitted
+
+2023-11-22 15:02:47.864  INFO 14792 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Starting PlagesApplication using Java 17.0.7 on HBPC-HWMBD15-004 with PID 14792 (C:\Users\HB\eclipse-workspace\plages20230912\target\classes started by HB in C:\Users\HB\eclipse-workspace\plages20230912)
+2023-11-22 15:02:47.864  INFO 14792 --- [restartedMain] f.h.fx.plages.PlagesApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-11-22 15:02:50.241  INFO 14792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-22 15:02:50.342  INFO 14792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 10 JPA repository interfaces.
+2023-11-22 15:02:50.597  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-22 15:02:50.598  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-22 15:02:50.598  INFO 14792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-11-22 15:02:51.025  INFO 14792 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-11-22 15:02:51.034  INFO 14792 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-11-22 15:02:51.034  INFO 14792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3160 ms
+2023-11-22 15:02:51.133  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2023-11-22 15:02:51.139  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2023-11-22 15:02:51.140  INFO 14792 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:plage'
+2023-11-22 15:02:51.257  INFO 14792 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-22 15:02:51.274  INFO 14792 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-22 15:02:51.534  INFO 14792 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-22 15:02:51.536  INFO 14792 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:02:51.923  WARN 14792 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ajoutDonneesInitiales' defined in file [C:\Users\HB\eclipse-workspace\plages20230912\target\classes\fr\humanbooster\fx\plages\initialisation\AjoutDonneesInitiales.class]: Unsatisfied dependency expressed through constructor parameter 5; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientDao' defined in fr.humanbooster.fx.plages.dao.ClientDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+2023-11-22 15:02:51.924  INFO 14792 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:02:52.135  WARN 14792 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-11-22 15:02:52.137  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2023-11-22 15:02:52.139  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2023-11-22 15:02:52.140  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-22 15:02:52.148  INFO 14792 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-22 15:02:52.157 ERROR 14792 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ajoutDonneesInitiales' defined in file [C:\Users\HB\eclipse-workspace\plages20230912\target\classes\fr\humanbooster\fx\plages\initialisation\AjoutDonneesInitiales.class]: Unsatisfied dependency expressed through constructor parameter 5; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientDao' defined in fr.humanbooster.fx.plages.dao.ClientDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.15.jar:2.7.15]
+	at fr.humanbooster.fx.plages.PlagesApplication.main(PlagesApplication.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.15.jar:2.7.15]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientDao' defined in fr.humanbooster.fx.plages.dao.ClientDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.29.jar:5.3.29]
+	... 26 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:107) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:95) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133) ~[na:na]
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1061) ~[na:na]
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:97) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:87) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.Optional.map(Optional.java:260) ~[na:na]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:87) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:365) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:323) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:231) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.util.Lazy.get(Lazy.java:115) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:329) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.29.jar:5.3.29]
+	... 37 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:96) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:119) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:259) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:93) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:103) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	... 59 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property 'lienDeParente' found for type 'Client'
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:91) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:438) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:414) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:367) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330) ~[na:na]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:349) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:332) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:250) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:251) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:384) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:385) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:96) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:89) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	... 63 common frames omitted
+
+2023-11-22 15:03:03.363  INFO 14792 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Starting PlagesApplication using Java 17.0.7 on HBPC-HWMBD15-004 with PID 14792 (C:\Users\HB\eclipse-workspace\plages20230912\target\classes started by HB in C:\Users\HB\eclipse-workspace\plages20230912)
+2023-11-22 15:03:03.364  INFO 14792 --- [restartedMain] f.h.fx.plages.PlagesApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-11-22 15:03:05.309  INFO 14792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-22 15:03:05.399  INFO 14792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 10 JPA repository interfaces.
+2023-11-22 15:03:05.602  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-22 15:03:05.603  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-22 15:03:05.603  INFO 14792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-11-22 15:03:05.838  INFO 14792 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-11-22 15:03:05.844  INFO 14792 --- [restartedMain] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-11-22 15:03:05.844  INFO 14792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2475 ms
+2023-11-22 15:03:05.896  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2023-11-22 15:03:05.900  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2023-11-22 15:03:05.900  INFO 14792 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:plage'
+2023-11-22 15:03:05.986  INFO 14792 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-22 15:03:06.001  INFO 14792 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-22 15:03:06.254  INFO 14792 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-22 15:03:06.255  INFO 14792 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:03:06.658  WARN 14792 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ajoutDonneesInitiales' defined in file [C:\Users\HB\eclipse-workspace\plages20230912\target\classes\fr\humanbooster\fx\plages\initialisation\AjoutDonneesInitiales.class]: Unsatisfied dependency expressed through constructor parameter 5; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientDao' defined in fr.humanbooster.fx.plages.dao.ClientDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+2023-11-22 15:03:06.659  INFO 14792 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:03:06.872  WARN 14792 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-11-22 15:03:06.872  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2023-11-22 15:03:06.873  INFO 14792 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2023-11-22 15:03:06.874  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-22 15:03:06.884  INFO 14792 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-22 15:03:06.894 ERROR 14792 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ajoutDonneesInitiales' defined in file [C:\Users\HB\eclipse-workspace\plages20230912\target\classes\fr\humanbooster\fx\plages\initialisation\AjoutDonneesInitiales.class]: Unsatisfied dependency expressed through constructor parameter 5; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientDao' defined in fr.humanbooster.fx.plages.dao.ClientDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.15.jar:2.7.15]
+	at fr.humanbooster.fx.plages.PlagesApplication.main(PlagesApplication.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.15.jar:2.7.15]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientDao' defined in fr.humanbooster.fx.plages.dao.ClientDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.29.jar:5.3.29]
+	... 26 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:107) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:95) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133) ~[na:na]
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1061) ~[na:na]
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:97) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:87) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.Optional.map(Optional.java:260) ~[na:na]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:87) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:365) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:323) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:231) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.util.Lazy.get(Lazy.java:115) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:329) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.29.jar:5.3.29]
+	... 37 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:96) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:119) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:259) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:93) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:103) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	... 59 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property 'lienDeParente' found for type 'Client'
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:91) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:438) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:414) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:367) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330) ~[na:na]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:349) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:332) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:250) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:251) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:384) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:385) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:96) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:89) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	... 63 common frames omitted
+
+2023-11-22 15:07:04.796  INFO 11388 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Starting PlagesApplication using Java 17.0.7 on HBPC-HWMBD15-004 with PID 11388 (C:\Users\HB\eclipse-workspace\plages20230912\target\classes started by HB in C:\Users\HB\eclipse-workspace\plages20230912)
+2023-11-22 15:07:04.798  INFO 11388 --- [restartedMain] f.h.fx.plages.PlagesApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-11-22 15:07:04.892  INFO 11388 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-22 15:07:04.893  INFO 11388 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-22 15:07:07.061  INFO 11388 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-22 15:07:07.293  INFO 11388 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 211 ms. Found 10 JPA repository interfaces.
+2023-11-22 15:07:09.464  INFO 11388 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-22 15:07:09.491  INFO 11388 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-22 15:07:09.492  INFO 11388 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-11-22 15:07:10.158  INFO 11388 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-11-22 15:07:10.182  INFO 11388 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-22 15:07:10.183  INFO 11388 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5289 ms
+2023-11-22 15:07:10.691  INFO 11388 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-22 15:07:11.111  INFO 11388 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-22 15:07:11.135  INFO 11388 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:plage'
+2023-11-22 15:07:11.734  INFO 11388 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-22 15:07:11.858  INFO 11388 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-11-22 15:07:12.220  INFO 11388 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-22 15:07:12.503  INFO 11388 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-22 15:07:14.253  INFO 11388 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-22 15:07:14.273  INFO 11388 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:07:15.840  WARN 11388 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ajoutDonneesInitiales' defined in file [C:\Users\HB\eclipse-workspace\plages20230912\target\classes\fr\humanbooster\fx\plages\initialisation\AjoutDonneesInitiales.class]: Unsatisfied dependency expressed through constructor parameter 5; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientDao' defined in fr.humanbooster.fx.plages.dao.ClientDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+2023-11-22 15:07:15.843  INFO 11388 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:07:16.065  WARN 11388 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-11-22 15:07:16.067  INFO 11388 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-22 15:07:16.071  INFO 11388 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-22 15:07:16.079  INFO 11388 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-22 15:07:16.119  INFO 11388 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-22 15:07:16.179 ERROR 11388 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ajoutDonneesInitiales' defined in file [C:\Users\HB\eclipse-workspace\plages20230912\target\classes\fr\humanbooster\fx\plages\initialisation\AjoutDonneesInitiales.class]: Unsatisfied dependency expressed through constructor parameter 5; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientDao' defined in fr.humanbooster.fx.plages.dao.ClientDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.15.jar:2.7.15]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.15.jar:2.7.15]
+	at fr.humanbooster.fx.plages.PlagesApplication.main(PlagesApplication.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-2.7.15.jar:2.7.15]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientDao' defined in fr.humanbooster.fx.plages.dao.ClientDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.29.jar:5.3.29]
+	... 26 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente); Reason: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:107) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:95) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133) ~[na:na]
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1061) ~[na:na]
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:97) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:87) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.Optional.map(Optional.java:260) ~[na:na]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:87) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:365) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:323) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:231) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.util.Lazy.get(Lazy.java:115) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:329) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.29.jar:5.3.29]
+	... 37 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List fr.humanbooster.fx.plages.dao.ClientDao.findByPaysAndLienDeParente(fr.humanbooster.fx.plages.business.Pays,fr.humanbooster.fx.plages.business.LienDeParente)! No property 'lienDeParente' found for type 'Client'
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:96) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:119) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:259) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:93) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:103) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	... 59 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property 'lienDeParente' found for type 'Client'
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:91) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:438) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:414) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:367) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330) ~[na:na]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:349) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:332) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:250) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:251) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:384) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:385) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:96) ~[spring-data-commons-2.7.15.jar:2.7.15]
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:89) ~[spring-data-jpa-2.7.15.jar:2.7.15]
+	... 63 common frames omitted
+
+2023-11-22 15:09:19.622  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Starting PlagesApplication using Java 17.0.7 on HBPC-HWMBD15-004 with PID 12576 (C:\Users\HB\eclipse-workspace\plages20230912\target\classes started by HB in C:\Users\HB\eclipse-workspace\plages20230912)
+2023-11-22 15:09:19.624  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-11-22 15:09:19.723  INFO 12576 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-22 15:09:19.724  INFO 12576 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-22 15:09:21.881  INFO 12576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-22 15:09:22.109  INFO 12576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 208 ms. Found 10 JPA repository interfaces.
+2023-11-22 15:09:24.328  INFO 12576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-22 15:09:24.352  INFO 12576 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-22 15:09:24.353  INFO 12576 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-11-22 15:09:25.055  INFO 12576 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-11-22 15:09:25.082  INFO 12576 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-22 15:09:25.083  INFO 12576 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5358 ms
+2023-11-22 15:09:25.641  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-22 15:09:26.136  INFO 12576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-22 15:09:26.159  INFO 12576 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:plage'
+2023-11-22 15:09:26.718  INFO 12576 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-22 15:09:26.844  INFO 12576 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-11-22 15:09:27.228  INFO 12576 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-22 15:09:27.529  INFO 12576 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-22 15:09:29.847  INFO 12576 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-22 15:09:29.866  INFO 12576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-22 15:09:32.742  INFO 12576 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@51276ec9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1752f191, org.springframework.security.web.context.SecurityContextPersistenceFilter@709893fa, org.springframework.security.web.header.HeaderWriterFilter@5ae26865, org.springframework.security.web.authentication.logout.LogoutFilter@603e7a2f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2708059c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28b74f0a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e7806ad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49a97b25, org.springframework.security.web.session.SessionManagementFilter@28b381c, org.springframework.security.web.access.ExceptionTranslationFilter@233e3738, org.springframework.security.web.access.intercept.AuthorizationFilter@c0b3e00]
+2023-11-22 15:09:33.165  WARN 12576 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-22 15:09:34.258  INFO 12576 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-11-22 15:09:37.880  INFO 12576 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-22 15:09:37.901  INFO 12576 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+2023-11-22 15:09:38.061  INFO 12576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-22 15:09:38.094  INFO 12576 --- [restartedMain] f.h.fx.plages.PlagesApplication          : Started PlagesApplication in 19.199 seconds (JVM running for 20.407)
+2023-11-22 15:09:38.744  INFO 12576 --- [restartedMain] f.h.f.p.i.AjoutDonneesInitiales          : Ajout de 10 clients
+2023-11-22 15:09:39.730  INFO 12576 --- [restartedMain] f.h.f.p.i.AjoutDonneesInitiales          : nb de clients ajoutés:10
+2023-11-22 15:09:54.920  INFO 12576 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-22 15:09:54.920  INFO 12576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-22 15:09:54.923  INFO 12576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-22 15:09:55.005  INFO 12576 --- [http-nio-8080-exec-1] f.h.f.p.c.UtilisateurController          : Wed Nov 22 15:09:55 CET 2023 dans getConnexion()
+2023-11-22 15:10:06.677 ERROR 12576 --- [http-nio-8080-exec-7] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@5a5e712d]
+2023-11-22 15:10:06.678 ERROR 12576 --- [http-nio-8080-exec-10] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@4db6c441]
+2023-11-22 15:10:06.678 ERROR 12576 --- [http-nio-8080-exec-3] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@4bd969b1]
+2023-11-22 15:10:06.682 ERROR 12576 --- [http-nio-8080-exec-9] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@2ef3ea9e]
+2023-11-22 15:10:06.678 ERROR 12576 --- [http-nio-8080-exec-6] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@106164f5]
+2023-11-22 15:10:06.690 ERROR 12576 --- [http-nio-8080-exec-5] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@6d5c2aea]
+2023-11-22 15:10:06.889 ERROR 12576 --- [http-nio-8080-exec-7] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@651ae632]
+2023-11-22 15:10:06.896 ERROR 12576 --- [http-nio-8080-exec-3] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@111837af]
+2023-11-22 15:10:06.905 ERROR 12576 --- [http-nio-8080-exec-10] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@18e158c1]
+2023-11-22 15:10:06.911 ERROR 12576 --- [http-nio-8080-exec-5] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@5466210e]
+2023-11-22 15:10:22.514 ERROR 12576 --- [http-nio-8080-exec-7] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@15d7b239]
+2023-11-22 15:10:22.520 ERROR 12576 --- [http-nio-8080-exec-2] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@1694ff35]
+2023-11-22 15:10:22.523 ERROR 12576 --- [http-nio-8080-exec-4] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@569a23c0]
+2023-11-22 15:10:22.529 ERROR 12576 --- [http-nio-8080-exec-6] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@50d0a1e3]
+2023-11-22 15:10:22.532 ERROR 12576 --- [http-nio-8080-exec-1] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@361b07dc]
+2023-11-22 15:10:22.546 ERROR 12576 --- [http-nio-8080-exec-4] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@6774aea1]
+2023-11-22 15:10:22.546 ERROR 12576 --- [http-nio-8080-exec-7] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@6437ab0c]
+2023-11-22 15:10:22.561 ERROR 12576 --- [http-nio-8080-exec-6] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@32dbe245]
+2023-11-22 15:10:22.564 ERROR 12576 --- [http-nio-8080-exec-9] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@68dcc25a]
+2023-11-22 15:10:22.582 ERROR 12576 --- [http-nio-8080-exec-1] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@1e9313b6]
+2023-11-22 15:11:09.070 ERROR 12576 --- [http-nio-8080-exec-7] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@1dbe7457]
+2023-11-22 15:11:09.075 ERROR 12576 --- [http-nio-8080-exec-4] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@3ce4d70c]
+2023-11-22 15:11:09.094 ERROR 12576 --- [http-nio-8080-exec-4] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@6e684bef]
+2023-11-22 15:11:09.101 ERROR 12576 --- [http-nio-8080-exec-2] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@5a85a28e]
+2023-11-22 15:11:09.101 ERROR 12576 --- [http-nio-8080-exec-9] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@3f754192]
+2023-11-22 15:11:09.116 ERROR 12576 --- [http-nio-8080-exec-7] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@6ea26a1]
+2023-11-22 15:11:09.119 ERROR 12576 --- [http-nio-8080-exec-6] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@6cb3d8a8]
+2023-11-22 15:11:09.122 ERROR 12576 --- [http-nio-8080-exec-4] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@47e76c6f]
+2023-11-22 15:11:09.123 ERROR 12576 --- [http-nio-8080-exec-1] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@6a2b0900]
+2023-11-22 15:11:09.131 ERROR 12576 --- [http-nio-8080-exec-2] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@70ae73ed]
+2023-11-22 15:11:14.928 ERROR 12576 --- [http-nio-8080-exec-3] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@2f335e04]
+2023-11-22 15:11:14.929 ERROR 12576 --- [http-nio-8080-exec-5] org.apache.logging.log4j.Logger          : /erreur : erreur : 404SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionRequestWrapper@7b140534]
