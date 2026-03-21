@@ -38,4 +38,8 @@ public class Equipement {
 		String fauteuil = this.nbDeFauteuils==0?"":(this.nbDeFauteuils)+" fauteuils";
 		return lit + virgule  + fauteuil;
 	}
+
+	public ajouterUnLit() {
+		this.nbDeLits += 1;
+	}
 }
